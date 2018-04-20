@@ -1,7 +1,7 @@
 """MAIN EGTS INTERFACE"""
 import json
 import enum
-from ..egts_message import *
+from ..egts_message import EGTSMessage
 from . import classes
 
 
