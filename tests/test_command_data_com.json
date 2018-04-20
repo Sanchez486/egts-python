@@ -1,0 +1,44 @@
+{
+  "transport": {
+    "pt": 1
+  },
+  "service": {
+    "sdr": [
+      {
+        "rfl": {
+          "ssod": 0,
+          "rsod": 0
+        },
+        "tm": "0x0fd90000",
+        "sst": 4,
+        "rst": 4,
+        "rd": [
+          {
+            "srt": 51,
+            "srd": {
+              "type_flags": {
+                "ct": 5,
+                "cct": 0
+              },
+              "cid": 1,
+              "sid": 1,
+              "flags": {
+                "acfe": 0,
+                "chsfe": 0
+              },
+              "cd": {
+                "adr": 12345,
+                "flags" : {
+                  "sz": 1,
+                  "act": 0
+                },
+                "ccd": 12345,
+                "dt": "0x30313233343536373839"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

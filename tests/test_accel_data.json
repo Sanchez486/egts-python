@@ -1,0 +1,40 @@
+{
+  "transport": {
+    "pt": 1
+  },
+  "service": {
+    "sdr": [
+      {
+        "rfl": {
+          "ssod": 0,
+          "rsod": 0
+        },
+        "tm": "0x0fd90000",
+        "sst": 10,
+        "rst": 10,
+        "rd": [
+          {
+            "srt": 20,
+            "srd": {
+              "atm": "0x02ADC4F6",
+              "ads": [
+                {
+                  "rtm": 0,
+                  "xaav": 0,
+                  "yaav": 0,
+                  "zaav": 0
+                },
+                {
+                  "rtm": 1,
+                  "xaav": 1,
+                  "yaav": 1,
+                  "zaav": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+# pylint: skip-file
+[MESSAGES CONTROL]
+disable=too-many-ancestors,
+        too-many-arguments,
+        no-member,
+        abstract-method,
+        not-callable,
+        too-few-public-methods,
+        duplicate-code,
+        not-an-iterable,
+        invalid-name,
+        wildcard-import,
+        unused-wildcard-import
+
+[SPELLING]
+spelling-ignore-words=egts
