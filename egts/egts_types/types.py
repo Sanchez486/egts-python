@@ -133,7 +133,7 @@ class Simple(EGTSField):
                 return self._maxlen
             else:
                 # if size is not fixed - it is calculated
-                return len(str(self)) / 2
+                return len(self._value)
         else:
             # if there is no maxlen, field's constant size is returned
             return self._SIZE

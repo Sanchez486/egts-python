@@ -18,6 +18,8 @@ class TrackData(EGTSRecord):
         """
         Calculate necessary fields
         """
+        if self['tds'].quantity == 0:
+            self['tds'].append({'flags': {'rtm': 0, 'lohs': 0, 'lahs': 0}})
         self['sa'] = self['tds'].quantity
 
 
@@ -45,7 +47,7 @@ class TrackDataStructure(EGTSRecord):
                 self['dir'].specified):
             flags['tnde'] = 1
         elif (self['lat'].specified or self['long'].specified or
-              self['sdpl'].specified or self['dirh_spdh'].specified or
+              self['spdl'].specified or self['dirh_spdh'].specified or
               self['dir'].specified):
             raise NotImplementedError('Track Data is incomplete!')
         else:
