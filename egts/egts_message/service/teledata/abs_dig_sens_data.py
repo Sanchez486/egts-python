@@ -17,6 +17,16 @@ class AbsDigSensData(EGTSRecord):
             *args, **kwargs
         )
 
+    @property
+    def special_inputs(self):
+        return {
+            'dsn': self._set_dsn
+        }
+
+    def _set_dsn(self, value):
+        self['dsnl_dsst']['dsnl'] = value % 2**8
+        self['dsnh'] = value // 2**8
+
 
 class DsnlDsst(BitField):
     """EGTS_SR_DIG_SENS_DATA Sensor State Bits and Number Low Bits Field"""

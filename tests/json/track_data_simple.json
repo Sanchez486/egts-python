@@ -26,11 +26,7 @@
                   },
                   "lat": 0,
                   "long": 0,
-                  "spdl": 0,
-                  "dirh_spdh": {
-                    "dirh": 0,
-                    "spdh": 0
-                  },
+                  "spd": 0,
                   "dir": 100
                 },
                 {
@@ -41,11 +37,7 @@
                   },
                   "lat": 10000,
                   "long": 10100,
-                  "spdl": "0xe8",
-                  "dirh_spdh": {
-                    "dirh": 0,
-                    "spdh": "11"
-                  },
+                  "spd": 1000,
                   "dir": 120
                 }
               ]

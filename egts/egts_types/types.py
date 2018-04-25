@@ -129,7 +129,7 @@ class Simple(EGTSField):
         :return: field length in bytes
         """
         if self._maxlen:
-            return len(self._value)
+            return len(str(self)) // 2
         else:
             # if there is no maxlen, field's constant size is returned
             return self._SIZE
@@ -219,7 +219,7 @@ class Simple(EGTSField):
         """
         Validate if field's size is appropriate
         """
-        length = len(str(self)) / 2
+        length = len(self)
         if not self._minlen <= length <= self._maxlen:
             raise OverflowError(
                 'Wrong length! Got {} instead of {} <= len <= {} '.
@@ -433,6 +433,16 @@ class Bits(Simple):
         """
         return None
 
+    def _size_validate(self):
+        """
+        Validate if field's size is appropriate
+        """
+        length = len(str(self))
+        if not self._minlen <= length <= self._maxlen:
+            raise OverflowError(
+                'Wrong length! Got {} instead of {} <= len <= {} '.
+                format(length, self._minlen, self._maxlen))
+
 
 class Boolean(Simple):
     """Boolean Type Object"""
@@ -622,12 +632,6 @@ class Compound(EGTSField):
             byte_array.append(byte)
         return tuple(byte_array)
 
-    def set_fields(self):
-        """
-        Override this method to calculate necessary fields
-        """
-        pass
-
     @property
     def specified(self):
         """
@@ -701,6 +705,12 @@ class EGTSRecord(Compound):
                 field.prepare()
         self.set_fields()
 
+    def set_fields(self):
+        """
+        Override this method to calculate necessary fields
+        """
+        pass
+
     @property
     def _input_casts(self):
         """
@@ -717,9 +727,12 @@ class EGTSRecord(Compound):
         DOES NOT SUPPORT ENCLOSED FIELD SETTING
         :param value: values dictionary
         """
-        for field in self._value.keys():
-            if field in value.keys():
-                self[field] = value[field]
+        for field in value.keys():
+            self[field] = value[field]
+
+    @property
+    def special_inputs(self):
+        return {}
 
     def __getitem__(self, item):
         """
@@ -757,10 +770,13 @@ class EGTSRecord(Compound):
         :param key: field's name
         :param value: value to set
         """
-        if isinstance(value, EGTSField):
-            self._value[key] = copy.deepcopy(value)
+        if key in self.special_inputs:
+            self.special_inputs[key](value)
         else:
-            self[key].value = value
+            if isinstance(value, EGTSField):
+                self._value[key] = copy.deepcopy(value)
+            else:
+                self[key].value = value
 
 
 class BitField(EGTSRecord):
@@ -851,7 +867,6 @@ class ArrayOfType(Compound):
         if issubclass(self._type, Compound):
             for field in self.fields:
                 field.prepare()
-        self.set_fields()
 
     @property
     def _input_casts(self):

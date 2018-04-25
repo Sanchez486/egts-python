@@ -33,9 +33,24 @@ class TrackDataStructure(EGTSRecord):
             ('long', UInt(optional=True)),
             ('spdl', Byte(optional=True)),
             ('dirh_spdh', DirhSpdh(optional=True)),
-            ('dir', Byte(optional=True)),
+            ('dirl', Byte(optional=True)),
             *args, ** kwargs
         )
+
+    @property
+    def special_inputs(self):
+        return {
+            'dir': self._set_dir,
+            'spd': self._set_spd
+        }
+
+    def _set_dir(self, value):
+        self['dirh_spdh']['dirh'] = value // 2**8
+        self['dirl'] = value % 2**8
+
+    def _set_spd(self, value):
+        self['dirh_spdh']['spdh'] = value // 2 ** 8
+        self['spdl'] = value % 2 ** 8
 
     def set_fields(self):
         """
@@ -44,11 +59,11 @@ class TrackDataStructure(EGTSRecord):
         flags = self['flags']
         if (self['lat'].specified and self['long'].specified and
                 self['spdl'].specified and self['dirh_spdh'].specified and
-                self['dir'].specified):
+                self['dirl'].specified):
             flags['tnde'] = 1
         elif (self['lat'].specified or self['long'].specified or
               self['spdl'].specified or self['dirh_spdh'].specified or
-              self['dir'].specified):
+              self['dirl'].specified):
             raise NotImplementedError('Track Data is incomplete!')
         else:
             flags['tnde'] = 0
