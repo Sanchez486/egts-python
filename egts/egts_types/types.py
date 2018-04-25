@@ -4,6 +4,7 @@ import struct
 import abc
 import collections
 import enum
+from ast import literal_eval
 
 
 class EGTSField(object):
@@ -128,12 +129,7 @@ class Simple(EGTSField):
         :return: field length in bytes
         """
         if self._maxlen:
-            if self._minlen == self._maxlen:
-                # if matching maxlen and minlen means that size is fixed
-                return self._maxlen
-            else:
-                # if size is not fixed - it is calculated
-                return len(self._value)
+            return len(self._value)
         else:
             # if there is no maxlen, field's constant size is returned
             return self._SIZE
@@ -349,13 +345,21 @@ class FloatStored(Simple):
 
 class String(Simple):
     """String Type Object"""
+    def __init__(self, fixed=False, *args, **kwargs):
+        self._fixed = fixed
+        super(String, self).__init__(*args, **kwargs)
+
     @property
     def _format_char(self):
         """
         Format char depends on string length
         :return: format char for "struct" formatting
         """
-        return '<{}s'.format(len(self))
+        if self._fixed:
+            length = self._maxlen
+        else:
+            length = len(self)
+        return '<{}s'.format(length)
 
     def _long_cast(self, value):
         """
@@ -371,12 +375,22 @@ class String(Simple):
         """
         self._string_cast(str(value))
 
+    def _unicode_cast(self, value):
+        self._string_cast(value.encode('cp1251'))
+
     def _string_cast(self, value):
         """
-        Cast string value.
+        Cast string value. Encode it to cp-1251 according to EGTS Standard
         :param value: string value
         """
-        self._value = value
+        try:
+            self._value = value.decode('utf-8').encode('cp1251')
+        except UnicodeDecodeError:
+            self._value = value
+
+    #EGTSField.value.getter
+    #def value(self):
+    #    return self._value.decode('cp1251')
 
 
 class Bits(Simple):
