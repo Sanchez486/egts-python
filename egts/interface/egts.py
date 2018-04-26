@@ -7,11 +7,13 @@ from . import classes
 
 class EGTS(object):
     """EGTS Message interface"""
-    def __init__(self, packet_type=None):
+    def __init__(self, packet_type=None, *records):
         """Constructor"""
         self._message = EGTSMessage()
         if packet_type:
             self.set_packet_type(packet_type)
+            for subrecords in records:
+                self.add_record(*subrecords)
 
     def __str__(self):
         """
@@ -44,8 +46,7 @@ class EGTS(object):
         :param output_folder: path to write
         """
         output_file = open(output_folder, 'wb')
-        for each_byte in self._message.bytes:
-            output_file.write(chr(each_byte))
+        output_file.write(self._message.bytes)
 
     def set_packet_type(self, packet_type):
         """
@@ -56,7 +57,10 @@ class EGTS(object):
             pt = packet_type.value
         else:
             pt = packet_type
-        self._message['service'] = classes.packet_types[pt]()
+        try:
+            self._message['service'] = classes.packet_types[pt]()
+        except KeyError:
+            raise TypeError('Unknown packet type: {}'.format(pt))
 
     def add_record(self, *subrecord_types):
         """

@@ -91,7 +91,7 @@ def header_crc(header):
     crc = 0xFF
     i = 0
     while i < len(header):
-        crc = CRC8_TABLE[crc ^ header[i]]
+        crc = CRC8_TABLE[crc ^ ord(header[i])]
         i += 1
     return crc
 
@@ -105,6 +105,6 @@ def data_crc(data):
     crc = 0xFFFF
     i = 0
     while i < len(data):
-        crc = ((crc << 8) % 0x10000) ^ CRC16_TABLE[(crc >> 8) ^ data[i]]
+        crc = ((crc << 8) % 0x10000) ^ CRC16_TABLE[(crc >> 8) ^ ord(data[i])]
         i += 1
     return crc

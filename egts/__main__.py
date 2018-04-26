@@ -1,6 +1,6 @@
 """egts packet's main module"""
 from .interface import egts
-import os
+from .interface import codes
 
 
 def main():

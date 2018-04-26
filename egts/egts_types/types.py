@@ -4,7 +4,7 @@ import struct
 import abc
 import collections
 import enum
-from ast import literal_eval
+import binascii
 
 
 class EGTSField(object):
@@ -163,7 +163,11 @@ class Simple(EGTSField):
         Pack value into little-endian octet string
         :return: little-endian octet string
         """
-        return struct.pack(self._format_char, self._value).encode('hex')
+        return self.bytes.encode('hex')
+
+    @property
+    def bytes(self):
+        return struct.pack(self._format_char, self._value)
 
     def _int_cast(self, value):
         """
@@ -349,6 +353,9 @@ class String(Simple):
         self._fixed = fixed
         super(String, self).__init__(*args, **kwargs)
 
+    def __len__(self):
+        return len(self._value)
+
     @property
     def _format_char(self):
         """
@@ -387,10 +394,6 @@ class String(Simple):
             self._value = value.decode('utf-8').encode('cp1251')
         except UnicodeDecodeError:
             self._value = value
-
-    #EGTSField.value.getter
-    #def value(self):
-    #    return self._value.decode('cp1251')
 
 
 class Bits(Simple):
@@ -591,15 +594,7 @@ class Compound(EGTSField):
         Calculate octet string
         :return: octet string
         """
-        if self.is_ready():
-            string = ''
-            for field in self.fields:
-                if field.specified:
-                    string += str(field)
-            return string
-        else:
-            # Cannot calculate string unless all the required fields are set
-            raise KeyError('Some required fields were not set!')
+        return binascii.hexlify(self.bytes)
 
     def is_ready(self):
         """
@@ -625,12 +620,15 @@ class Compound(EGTSField):
         Calculate byte array for the field
         :return: byte values (0 <= x <= 255) tuple
         """
-        byte_array = list()
-        octet_string = str(self)
-        for i in xrange(0, len(octet_string), 2):
-            byte = int(octet_string[i:i + 2], 16)
-            byte_array.append(byte)
-        return tuple(byte_array)
+        if self.is_ready():
+            byte_string = b''
+            for field in self.fields:
+                if field.specified:
+                    byte_string += field.bytes
+            return byte_string
+        else:
+            # Cannot calculate string unless all the required fields are set
+            raise KeyError('Some required fields were not set!')
 
     @property
     def specified(self):
@@ -801,17 +799,31 @@ class BitField(EGTSRecord):
         """Length in bytes = Length in bits/8"""
         return super(BitField, self).__len__() // 8
 
+    @property
+    def bitstring(self):
+        if self.is_ready():
+            bit_string = ''
+            for field in self.fields:
+                bit_string += str(field)
+            return bit_string
+        else:
+            raise KeyError('Some required fields were not set!')
+
     def __str__(self):
         """
         str method overriding
         :return: octet string (bytes)
         """
-        bit_string = super(BitField, self).__str__()
+        bit_string = self.bitstring
         string = ''
         for i in xrange(0, len(bit_string), 8):
             # MAY BE WRONG BYTES ORDER
             string += '{:02x}'.format(int(bit_string[i:i+8], 2))
         return string
+
+    @property
+    def bytes(self):
+        return binascii.unhexlify(str(self))
 
 
 class ArrayOfType(Compound):
