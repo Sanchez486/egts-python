@@ -11,6 +11,13 @@ def main():
     output_folder = 'D:\\Shared\\test.hex'
     egts_instance.write(output_folder)
 
+    import struct
+    num = -1.2e-45
+    res = struct.pack('<f', num).encode('hex')
+    res2 = struct.unpack('<f', res.decode('hex'))
+    print res
+    print res2
+
     print egts_instance
     print 'SUCCESS!'
 

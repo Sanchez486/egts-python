@@ -368,13 +368,6 @@ class String(Simple):
             length = len(self)
         return '<{}s'.format(length)
 
-    def _long_cast(self, value):
-        """
-        Cast long value.
-        :param value: long value
-        """
-        self._string_cast(str(value))
-
     def _int_cast(self, value):
         """
         Cast int value.
@@ -425,9 +418,9 @@ class Bits(Simple):
         :param value: string value
         """
         if value[0:2] == '0x':
-            self._value = int(value, 16)
+            self._int_cast(int(value, 16))
         else:
-            self._value = int(value, 2)
+            self._int_cast(int(value, 2))
 
     @property
     def _format_char(self):
@@ -435,6 +428,11 @@ class Bits(Simple):
         Bits do not have any format char because str method is overridden
         """
         return None
+
+    def _validate(self):
+        super(Bits, self)._validate()
+        if self._value < 0:
+            raise TypeError('Cannot assign negative values to Bits!')
 
     def _size_validate(self):
         """
