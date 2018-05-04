@@ -1,5 +1,6 @@
 """EGTS_SR_TRACK_DATA"""
 from ....egts_types import *
+from ....egts_types.date_time_field import DateTime
 
 
 class TrackData(EGTSRecord):
@@ -9,7 +10,7 @@ class TrackData(EGTSRecord):
             # Structures amount is calculated based on length of tds
             ('sa', Byte()),
             # Time is set outside
-            ('atm', UInt()),
+            ('atm', DateTime()),
             ('tds', ArrayOfType(maxlen=255, of_type=TrackDataStructure)),
             *args, **kwargs
         )

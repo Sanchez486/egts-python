@@ -1,5 +1,6 @@
 """EGTS_SR_ACCEL_DATA"""
 from ....egts_types import *
+from ....egts_types.date_time_field import DateTime
 
 
 class AccelData(EGTSRecord):
@@ -14,7 +15,7 @@ class AccelData(EGTSRecord):
             # Structures amount is calculated based on length of ads
             ('sa', Byte()),
             # Time is set outside
-            ('atm', UInt()),
+            ('atm', DateTime()),
             ('ads', ArrayOfType(of_type=AccelerometerDataService, maxlen=255)),
             *args, **kwargs
         )

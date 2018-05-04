@@ -1,5 +1,6 @@
 """Service Data Record"""
 from ...egts_types import *
+from ...egts_types.date_time_field import DateTime
 from .data_subrecord import ServiceDataSubRecord
 
 
@@ -20,7 +21,7 @@ class ServiceDataRecord(EGTSRecord):
             # Those three fields are unspecified by default
             ('oid', UInt(optional=True)),
             ('evid', UInt(optional=True)),
-            ('tm', UInt(optional=True)),
+            ('tm', DateTime(optional=True)),
             # Service ID's. Set outside?
             ('sst', Byte()),
             ('rst', Byte()),

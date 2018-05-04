@@ -1,5 +1,6 @@
 """EGTS_SR_POS_DATA"""
 from ....egts_types import *
+from ....egts_types.date_time_field import DateTime
 
 
 class PosData(EGTSRecord):
@@ -12,7 +13,7 @@ class PosData(EGTSRecord):
         """
         super(PosData, self).__init__(
             # All set outside
-            ('ntm', UInt()),
+            ('ntm', DateTime()),
             ('lat', UInt()),
             ('long', UInt()),
             ('flags', Flags()),
