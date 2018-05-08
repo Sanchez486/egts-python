@@ -7,7 +7,7 @@ import datetime
 def main():
     """Module Main Function"""
     egts_instance = egts.EGTS()
-    input_folder = 'D:\\PycharmProjects\\egts_protocol\\tests\\json\\track_data_simple.json'
+    input_folder = 'D:\\PycharmProjects\\egts_protocol\\tests\\json\\counters_data_simple.json'
     egts_instance.load_json(input_folder)
     output_folder = 'D:\\Shared\\test.hex'
 

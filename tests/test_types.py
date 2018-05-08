@@ -568,7 +568,7 @@ class TestBits:
         from egts.egts_types.types import Bits
         return Bits(value, *args, **kwargs)
 
-    @pytest.mark.parametrize("minlen,maxlen,test_input,expected", [
+    @pytest.mark.parametrize("maxlen,test_input,expected", [
         (3, 0b1101, OverflowError),
         (3, -1, TypeError)
     ])
@@ -612,7 +612,7 @@ class TestBits:
 class TestEGTSRecord:
     @pytest.fixture(scope='class')
     def field(self, *args, **kwargs):
-        """Init test field"""
+        """Init empty test field"""
         from egts.egts_types import EGTSRecord, Byte
         return EGTSRecord(
             ("first", Byte()),
@@ -624,19 +624,225 @@ class TestEGTSRecord:
             *args, **kwargs
         )
 
-    def test_dict(self):
-        """Test dict value assignment"""
+    @pytest.mark.parametrize("first,third,fourth,fifth,expected", [
+        (10, 30, 40, 50, '0a1e2832'),
+        (0xff, 0x0a, 0xcc, 0x00, 'ff0acc00')
+    ])
+    def test_str(self, first, third, fourth, fifth, expected):
+        """Test field string request"""
         field = self.field()
-        field.value = {"first": 10,
-                       "second": {
-                           "third": 30,
-                           "fourth": 40
-                       },
-                       "fifth": 50
-                       }
-        assert str(field) == '0a1e2832'
+        test_input = {"first": first,
+                      "second": {
+                           "third": third,
+                           "fourth": fourth
+                      },
+                      "fifth": fifth
+                      }
+        field.value = test_input
+        assert str(field) == expected
 
-    #def test_assignment(self):
-    #    field = self.field()
-     #   field['first'] =
+    @pytest.mark.parametrize("first,third,fourth,fifth,expected", [
+        (-1, 30, 40, 50, struct.error),
+        (0xff, 0x0a, 0xcc, None, ValueError)
+    ])
+    def test_str_failed(self, first, third, fourth, fifth, expected):
+        """Test failed string request"""
+        field = self.field()
+        test_input = {"first": first,
+                      "second": {
+                          "third": third,
+                          "fourth": fourth
+                      },
+                      "fifth": fifth
+                      }
+        with pytest.raises(expected):
+            field.value = test_input
+            _ = str(field)
 
+    @pytest.mark.parametrize("first,third,fourth,fifth,expected", [
+        (10, 30, 40, 50, b'\x0a\x1e\x28\x32'),
+        (0xff, 0x0a, 0xcc, 0x00, b'\xff\x0a\xcc\x00')
+    ])
+    def test_bytes(self, first, third, fourth, fifth, expected):
+        """Test field bytes request assignment"""
+        field = self.field()
+        test_input = {"first": first,
+                      "second": {
+                          "third": third,
+                          "fourth": fourth
+                      },
+                      "fifth": fifth
+                      }
+        field.value = test_input
+        assert field.bytes == expected
+
+    def test_len(self):
+        """Test field length calculation"""
+        field = self.field()
+        assert len(field) == 4
+
+    @pytest.mark.parametrize("item,value,expected", [
+        ('first', 32, 32),
+        ('third', 100, 100)
+    ])
+    def test_assignment(self, item, value, expected):
+        """Test item assignment"""
+        field = self.field()
+        field[item] = value
+        assert field[item].value == expected
+
+    @pytest.mark.parametrize("item,value,expected", [
+        ('sixth', 32, KeyError),
+        ('second', 100, TypeError)
+    ])
+    def test_assignment_failed(self, item, value, expected):
+        """Test failed item assignment"""
+        field = self.field()
+        with pytest.raises(expected):
+            field[item] = value
+
+
+class TestBitField:
+    @pytest.fixture(scope='class')
+    def field(self, *args, **kwargs):
+        """Init empty test field"""
+        from egts.egts_types import BitField, Bits
+        return BitField(
+            ("first", Bits(maxlen=1)),
+            ("second", Bits(maxlen=5)),
+            ("third", Bits(maxlen=2)),
+            *args, **kwargs
+        )
+
+    @pytest.mark.parametrize("first,second,third,expected", [
+        (1, 31, 3, 'ff'),
+        (0b0, 0b00001, 0b00, '04')
+    ])
+    def test_str(self, first, second, third, expected):
+        """Test field string request"""
+        field = self.field()
+        test_input = {"first": first,
+                      "second": second,
+                      "third": third
+                      }
+        field.value = test_input
+        assert str(field) == expected
+
+    @pytest.mark.parametrize("first,second,third,expected", [
+        (-1, 0, 0, OverflowError),
+        (0b10, 0, 0, OverflowError)
+    ])
+    def test_str_failed(self, first, second, third, expected):
+        """Test failed string request"""
+        field = self.field()
+        test_input = {"first": first,
+                      "second": second,
+                      "third": third
+                      }
+        with pytest.raises(expected):
+            field.value = test_input
+            _ = str(field)
+
+    @pytest.mark.parametrize("first,second,third,expected", [
+        (1, 31, 3, b'\xff'),
+        (0b0, 0b00001, 0b00, b'\x04')
+    ])
+    def test_bytes(self, first, second, third, expected):
+        """Test field bytes request assignment"""
+        field = self.field()
+        test_input = {"first": first,
+                      "second": second,
+                      "third": third
+                      }
+        field.value = test_input
+        assert field.bytes == expected
+
+    def test_len(self):
+        """Test field length calculation"""
+        field = self.field()
+        assert len(field) == 1
+
+    @pytest.mark.parametrize("item,value,expected", [
+        ('first', 0b1, 0b1),
+        ('second', 0b10, 0b10)
+    ])
+    def test_assignment(self, item, value, expected):
+        """Test item assignment"""
+        field = self.field()
+        field[item] = value
+        assert field[item].value == expected
+
+    @pytest.mark.parametrize("item,value,expected", [
+        ('first', -1, OverflowError),
+        ('second', 32, OverflowError)
+    ])
+    def test_assignment_failed(self, item, value, expected):
+        """Test failed item assignment"""
+        field = self.field()
+        with pytest.raises(expected):
+            field[item] = value
+
+
+class TestArrayOfType:
+    @pytest.fixture(scope='class')
+    def field(self, *args, **kwargs):
+        """Init empty test field"""
+        from egts.egts_types import ArrayOfType, Byte
+        return ArrayOfType(of_type=Byte, maxlen=4, *args, **kwargs)
+
+    @pytest.mark.parametrize("input_list,expected", [
+        ([10, 30, 40, 50], '0a1e2832'),
+    ])
+    def test_str(self, input_list, expected):
+        """Test field string request"""
+        field = self.field()
+        field.value = input_list
+        assert str(field) == expected
+
+    @pytest.mark.parametrize("input_list,expected", [
+        ([-1, 30, 40, 50], struct.error),
+        ([0xff, 0x0a, 0xcc, None], ValueError),
+        ([0xff, 0x0a, 0xcc, 0xcc, 0xcc], OverflowError)
+    ])
+    def test_str_failed(self, input_list, expected):
+        """Test failed string request"""
+        field = self.field()
+        with pytest.raises(expected):
+            field.value = input_list
+            _ = str(field)
+
+    @pytest.mark.parametrize("input_list,expected", [
+        ([10, 30, 40, 50], b'\x0a\x1e\x28\x32'),
+        ([0xff, 0x0a, 0xcc, 0x00], b'\xff\x0a\xcc\x00')
+    ])
+    def test_bytes(self, input_list, expected):
+        """Test field bytes request assignment"""
+        field = self.field()
+        field.value = input_list
+        assert field.bytes == expected
+
+    def test_len(self):
+        """Test field length calculation"""
+        field = self.field()
+        assert len(field) == 0
+        field.append(5)
+        assert len(field) == 1
+
+    @pytest.mark.parametrize("initial_value,to_add,expected", [
+        ([], 32, 32),
+        ([1, 2, 3], '100', 100)
+    ])
+    def test_assignment(self, initial_value, to_add, expected):
+        """Test item assignment"""
+        field = self.field(value=initial_value)
+        field.append(to_add)
+        assert field[-1].value == expected
+
+    @pytest.mark.parametrize("item,value,expected", [
+        ([], 256, TypeError),
+    ])
+    def test_assignment_failed(self, item, value, expected):
+        """Test failed item assignment"""
+        field = self.field()
+        with pytest.raises(expected):
+            field[item] = value

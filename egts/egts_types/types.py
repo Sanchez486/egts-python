@@ -86,6 +86,8 @@ class EGTSField(object):
         else:
             raise TypeError('Cannot assign {} to {}'.format(type(value),
                                                             type(self)))
+        if value is None:
+            return
         # pylint: enable=unidiomatic-typecheck
         cast(value)
         self._validate()
@@ -141,7 +143,7 @@ class Simple(EGTSField):
         :return: (input format: cast function) dict
         """
         return {
-            None: self.unset,
+            type(None): self.unset,
             int: self._int_cast,
             str: self._string_cast,
             unicode: self._unicode_cast,
@@ -626,7 +628,7 @@ class Compound(EGTSField):
             return byte_string
         else:
             # Cannot calculate string unless all the required fields are set
-            raise KeyError('Some required fields were not set!')
+            raise ValueError('Some required fields were not set!')
 
     @property
     def specified(self):
@@ -963,14 +965,35 @@ class ArrayOfType(Compound):
                                 .format(type(value), self._type))
         else:
             self._value.append(self._type(value=value))
-        self._validate()
+        self._size_validate(soft=True)
 
-    def _size_validate(self):
+    def insert(self, index, value=None):
+        """
+        Insert item to array at position
+        :param index: where to insert
+        :param value: value to add
+        """
+        if isinstance(value, EGTSField):
+            if isinstance(value, self._type):
+                self._value.insert(index, copy.deepcopy(value))
+            else:
+                raise TypeError('Cannot insert {} to array of {}'
+                                .format(type(value), self._type))
+        else:
+            self._value.insert(index, self._type(value=value))
+        self._size_validate(soft=True)
+
+    def _size_validate(self, soft=False):
         """
         Validate if array's size is appropriate
         """
         length = self.quantity
-        if not self._minlen <= length <= self._maxlen:
+        if soft:
+            minlen = 0
+        else:
+            minlen = self._minlen
+        maxlen = self._maxlen
+        if not minlen <= length <= maxlen:
             raise OverflowError(
                 'Cannot add another element to the array (maxlen=={})'.
                 format(self._maxlen))

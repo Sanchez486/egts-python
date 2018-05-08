@@ -19,11 +19,30 @@ class CountersData(EGTSRecord):
             *args, **kwargs
         )
 
+    @property
+    def special_inputs(self):
+        def generate_setter(number):
+            flags = self['cfe_flags']
+            predecessors = 0
+            for i in xrange(1, number):
+                predecessors += flags['cfe{}'.format(i)].value
+
+            def setter(value):
+                if flags['cfe{}'.format(number)] == 0b1:
+                    self['cn'][predecessors] = value
+                else:
+                    self['cn'].insert(predecessors, value)
+                    flags['cfe{}'.format(number)] = 0b1
+
+            return setter
+
+        return {'cn{}'.format(num): generate_setter(num) for num in range(1, 9)}
+
 
 class Cn(ArrayOfType):
     """EGTS_SR_COUNTERS_DATA Counter Class"""
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """
         Field of 3 bytes constructor
         """
-        super(Cn, self).__init__(of_type=Byte, maxlen=3, minlen=3)
+        super(Cn, self).__init__(of_type=Byte, maxlen=3, minlen=3, *args, **kwargs)

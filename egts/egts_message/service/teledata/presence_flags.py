@@ -1,5 +1,5 @@
 """Unique Teledata Structure - Array of 8 flags for 8 objects"""
-from ....egts_types import *
+from ....egts_types import BitField, Bits
 
 
 class PresenceFlags(BitField):
@@ -13,5 +13,5 @@ class PresenceFlags(BitField):
         """
         items = list()
         for i in xrange(8, 0, -1):
-            items.append((field_name + str(i), Bits(1)))
+            items.append((field_name + str(i), Bits(maxlen=1, value=0)))
         super(PresenceFlags, self).__init__(*(items+list(args)), **kwargs)

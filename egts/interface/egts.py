@@ -29,7 +29,6 @@ class EGTS(object):
         """
         json_file = open(json_path)
         egts = json.load(json_file)
-        # <FIX>
         if egts['service']:
             self.set_packet_type(egts['transport']['pt'])
             for record in egts['service']['sdr']:
@@ -37,8 +36,9 @@ class EGTS(object):
                 for subrecord in record['rd']:
                     types.append(subrecord['srt'])
                 self.add_record(*types)
-        # </FIX>
         self._message.value = egts
+        if not self._message.is_ready():
+            raise ValueError('Incomplete JSON! Some required fields are unspecified!')
 
     def write(self, output_folder):
         """
