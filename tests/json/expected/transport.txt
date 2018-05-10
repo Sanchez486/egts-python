@@ -1,8 +1,8 @@
 EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
 ------------------------------------------------------------------------------------
-File: 'D:\PycharmProjects\egts_protocol\tests\tmp_msg.bin'
+File: 'D:\PycharmProjects\egts_protocol\tests\json\generated\tmp_msg.bin'
 Packet data: 
- 0100000B00000001000163
+ 0100000B00000001000052
 
 
 EGTS Transport Layer:
@@ -22,7 +22,7 @@ EGTS Transport Layer:
   Frame Data Length   - 0
   Packet ID           - 1
   No route info       -
-  Header Check Sum    - 0x63
+  Header Check Sum    - 0x52
 
 EGTS Service Layer:
 ---------------------

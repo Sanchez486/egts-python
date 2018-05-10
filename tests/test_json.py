@@ -11,6 +11,7 @@ VALIDATOR_PATH = '{}json\\{}'.format(CWD, VALIDATOR_FILENAME)
 
 
 TEST_NAMES = [
+    'ad_sensors_data_simple',
     'accel_data_simple',
     'accel_data_max_size',
     'auth_info_simple',
@@ -65,7 +66,11 @@ def test_json(test_name):
     wait(1)
 
     # Compare output with expected
-    result = open(result_path, 'r')
     expected_path = '{}json\\expected\\{}.txt'.format(CWD, test_name)
-    expected = open(expected_path, 'r')
-    assert result.readlines()[3:] == expected.readlines()[3:]
+    if os.path.isfile(expected_path):
+        result = open(result_path, 'r')
+
+        expected = open(expected_path, 'r')
+        assert result.readlines()[3:] == expected.readlines()[3:]
+    else:
+        raise NotImplementedError('{} do not have any expected output!'.format(test_name))
