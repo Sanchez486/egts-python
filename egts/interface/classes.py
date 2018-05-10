@@ -17,7 +17,7 @@ subrecord_types = {
     6: AuthParams,
     7: AuthInfo,
     8: ServiceInfo,
-    9: ServiceInfo,
+    9: ResultCode,
     # Commands
     51: CommandData,
     # Firmware

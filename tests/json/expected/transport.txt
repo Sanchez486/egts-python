@@ -1,0 +1,36 @@
+EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
+------------------------------------------------------------------------------------
+File: 'D:\PycharmProjects\egts_protocol\tests\tmp_msg.bin'
+Packet data: 
+ 0100000B00000001000163
+
+
+EGTS Transport Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Protocol Version    - 1
+  Security Key ID     - 0
+  Flags               - 00000000b (0x00)
+       Prefix         - 00
+       Route          -   0
+       Encryption Alg -    00
+       Compression    -      0
+       Priority       -       00 (the highest)
+  Header Length       - 11
+  Header Encoding     - 0
+  Frame Data Length   - 0
+  Packet ID           - 1
+  No route info       -
+  Header Check Sum    - 0x63
+
+EGTS Service Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Packet Type         - unspecified
+  Service Layer CS    - 0x0000
+
+
+-------------------------------------------------------------
+Press any key to exit...

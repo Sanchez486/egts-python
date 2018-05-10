@@ -1,36 +1,68 @@
 import os
 import time
 import win32com.client
-# import pytest
+import pytest
 from egts.interface import egts
 
 
 CWD = os.getcwd() + '\\'
 VALIDATOR_FILENAME = 'EGTS_validator_x64.exe'
-VALIDATOR = CWD + VALIDATOR_FILENAME
-CMD = 'cmd.exe'
-TIME = ['cmd.exe', '/C', 'time']
-COMP = ['cmd.exe', '/C', 'comp']
+VALIDATOR_PATH = CWD + VALIDATOR_FILENAME
 
 
-def test_accel_data():
+@pytest.mark.parametrize("test_name", [
+    'accel_data_simple',
+    'accel_data_max_size',
+    'auth_info_simple',
+    'auth_params_max_size',
+    'auth_params_no_optional',
+    # VALIDATOR CRASH: 'command_data_max_size_com',
+    # VALIDATOR CRASH: 'command_data_max_size_conf',
+    'command_data_simple_com',
+    'command_data_simple_conf',
+    'counters_data_simple',
+    'module_data_simple',
+    'raw_msd_data_max_length',
+    'raw_msd_data_simple',
+    'result_code_simple',
+    'service_full_data_max_size',
+    'service_full_data_simple',
+    'service_info_simple',
+    'service_part_data_max_size',
+    'service_part_data_simple',
+    'term_identity_all_optional',
+    'term_identity_max_size',
+    'term_identity_no_optional',
+    'term_identity_simple',
+    'track_data_and_accel_data',
+    'track_data_empty',
+    'track_data_max_size',
+    'track_data_simple',
+    'transport',
+    'vehicle_data_and_term_identity',
+    'vehicle_data_simple',
+])
+def test_json(test_name):
+    def wait(tm):
+        time.sleep(tm/10.)
+
+    # Write Test Message File
     msg = egts.EGTS()
-    json_path = CWD + 'json/accel_data_simple.json'
+    json_path = '{}json\\{}.json'.format(CWD, test_name)
     msg.load_json(json_path)
-    msg_path = CWD + 'test.bin'
+    msg_path = CWD + 'tmp_msg.bin'
     msg.write(msg_path)
 
-    print 'starting'
-
-    validation_path = CWD + 'validation.txt'
+    # Generate Validator Output
+    result_path = '{}json\\generated\\{}.txt'.format(CWD, test_name)
     shell = win32com.client.Dispatch('WScript.Shell')
-    shell.Run('cmd /C ' + VALIDATOR + ' -f:' + msg_path + ' > ' + validation_path)
-    time.sleep(0.3)
+    shell.Run('cmd /C ' + VALIDATOR_PATH + ' -f:' + msg_path + ' > ' + result_path)
+    wait(1)
     shell.SendKeys("{Enter}", 0)
+    wait(1)
 
-    print 'finishing'
-
-    assert str(msg)
-
-
-test_accel_data()
+    # Compare output with expected
+    result = open(result_path, 'r')
+    expected_path = '{}json\\expected\\{}.txt'.format(CWD, test_name)
+    expected = open(expected_path, 'r')
+    assert result.readlines()[3:] == expected.readlines()[3:]

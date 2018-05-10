@@ -26,7 +26,7 @@ class EGTSMessage(EGTSRecord):
         """
         Calculate necessary fields
         """
-        if self['service']:
+        if 'service' in self.value:
             self['sfrcs'] = crc.data_crc(self['service'].bytes)
             self['transport']['fdl'] = len(self['service'])
         self['hcs'] = crc.header_crc(self['transport'].bytes)

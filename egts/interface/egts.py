@@ -22,6 +22,12 @@ class EGTS(object):
         """
         return str(self._message)
 
+    def __getitem__(self, item):
+        return self._message['item']
+
+    def __setitem__(self, key, value):
+        self._message[key] = value
+
     def load_json(self, json_path):
         """
         Read EGTS message from json
@@ -29,13 +35,16 @@ class EGTS(object):
         """
         json_file = open(json_path)
         egts = json.load(json_file)
-        if egts['service']:
+        if 'service' in egts:
             self.set_packet_type(egts['transport']['pt'])
             for record in egts['service']['sdr']:
                 types = list()
                 for subrecord in record['rd']:
                     types.append(subrecord['srt'])
                 self.add_record(*types)
+        else:
+            self._message._value.pop('service')
+            self._message._value.pop('sfrcs')
         self._message.value = egts
         if not self._message.is_ready():
             raise ValueError('Incomplete JSON! Some required fields are unspecified!')

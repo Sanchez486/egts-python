@@ -41,6 +41,14 @@ class EGTSField(object):
         """
         raise NotImplementedError
 
+    @abc.abstractproperty
+    def bytes(self):
+        """
+        Each field must be able to calculate bytes representation of itself
+        :return: octet string
+        """
+        raise NotImplementedError
+
     @abc.abstractmethod
     def __str__(self):
         """
@@ -596,6 +604,7 @@ class Compound(EGTSField):
         """
         return binascii.hexlify(self.bytes)
 
+    @abc.abstractmethod
     def is_ready(self):
         """
         Check all the fields are set and field is ready to be calculated

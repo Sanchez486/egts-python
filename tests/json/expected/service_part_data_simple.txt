@@ -1,0 +1,61 @@
+EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
+------------------------------------------------------------------------------------
+File: 'D:\PycharmProjects\egts_protocol\tests\tmp_msg.bin'
+Packet data: 
+ 0100000B006500010001965A000100040000D90F0909215700393002000200007B010054F16162636465616263646500FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF766F
+
+
+EGTS Transport Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Protocol Version    - 1
+  Security Key ID     - 0
+  Flags               - 00000000b (0x00)
+       Prefix         - 00
+       Route          -   0
+       Encryption Alg -    00
+       Compression    -      0
+       Priority       -       00 (the highest)
+  Header Length       - 11
+  Header Encoding     - 0
+  Frame Data Length   - 101
+  Packet ID           - 1
+  No route info       -
+  Header Check Sum    - 0x96
+
+EGTS Service Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Packet Type         - EGTS_PT_APPDATA
+  Service Layer CS    - 0x6F76
+
+    Service Layer Record:
+    ---------------------
+    Validating Result    - 0 (OK)
+
+    Record Length               - 90
+    Record Number               - 1
+    Record flags                -     00000100b (0x04)
+        Sourse Service On Device    - 0
+        Recipient Service On Device -  0
+        Group Flag                  -   0
+        Record Processing Priority  -    00 (the highest)
+        Time Field Exists           -      1
+        Event ID Field Exists       -       0
+        Object ID Field Exists      -        0
+    Time                        - 0x0FD90000 (05.06.2018 07:25:52 GMT)
+    Source Service Type         - 9 (EGTS_FIRMWARE_SERVICE) 
+    Recipient Service Type      - 9 (EGTS_FIRMWARE_SERVICE) 
+
+       Subrecord Data:
+       ------------------
+       Validating Result   - 150 (Unknown service)
+
+       Subrecord Type      - 33 (EGTS_SR_SERVICE_PART_DATA)
+       Subrecord Length    - 87
+
+
+-------------------------------------------------------------
+Press any key to exit...
