@@ -22,6 +22,14 @@ class EGTS(object):
         """
         return str(self._message)
 
+    @property
+    def bytes(self):
+        """
+        Get message's bytes representation
+        :return: byte string
+        """
+        return self._message.bytes
+
     def __getitem__(self, item):
         return self._message['item']
 
@@ -55,7 +63,7 @@ class EGTS(object):
         :param output_folder: path to write
         """
         output_file = open(output_folder, 'wb')
-        output_file.write(self._message.bytes)
+        output_file.write(self.bytes)
 
     def set_packet_type(self, packet_type):
         """
@@ -82,6 +90,7 @@ class EGTS(object):
         record_number = sdr.quantity - 1
         for subrecord_type in subrecord_types:
             self.add_subrecord(record_number, subrecord_type)
+        return sdr[record_number]
 
     def add_subrecord(self, record_number, subrecord_type):
         """
@@ -99,3 +108,4 @@ class EGTS(object):
         else:
             srt = subrecord_type
         srd[subrecord_number]['srd'] = classes.subrecord_types[srt]()
+        return srd[subrecord_number]

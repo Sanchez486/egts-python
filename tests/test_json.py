@@ -7,10 +7,10 @@ from egts.interface import egts
 
 CWD = os.getcwd() + '\\'
 VALIDATOR_FILENAME = 'EGTS_validator_x64.exe'
-VALIDATOR_PATH = CWD + VALIDATOR_FILENAME
+VALIDATOR_PATH = '{}json\\{}'.format(CWD, VALIDATOR_FILENAME)
 
 
-@pytest.mark.parametrize("test_name", [
+TEST_NAMES = [
     'accel_data_simple',
     'accel_data_max_size',
     'auth_info_simple',
@@ -41,16 +41,19 @@ VALIDATOR_PATH = CWD + VALIDATOR_FILENAME
     'transport',
     'vehicle_data_and_term_identity',
     'vehicle_data_simple',
-])
+]
+
+
+@pytest.mark.parametrize("test_name", TEST_NAMES)
 def test_json(test_name):
     def wait(tm):
         time.sleep(tm/10.)
 
     # Write Test Message File
     msg = egts.EGTS()
-    json_path = '{}json\\{}.json'.format(CWD, test_name)
+    json_path = '{}json\\data\\{}.json'.format(CWD, test_name)
     msg.load_json(json_path)
-    msg_path = CWD + 'tmp_msg.bin'
+    msg_path = '{}json\\generated\\tmp_msg.bin'.format(CWD)
     msg.write(msg_path)
 
     # Generate Validator Output
