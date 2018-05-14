@@ -12,6 +12,9 @@ VALIDATOR_PATH = '{}json\\{}'.format(CWD, VALIDATOR_FILENAME)
 
 TEST_NAMES = [
     'ad_sensors_data_simple',
+    'passengers_counters_simple',
+    'loopin_data_simple',
+
     'accel_data_simple',
     'accel_data_max_size',
     'auth_info_simple',
