@@ -66,7 +66,7 @@ class DirhAltsSpdh(BitField):
         """
         super(DirhAltsSpdh, self).__init__(
             ('dirh', Bits(maxlen=1)),
-            ('alts', Bits(maxlen=1)),
+            ('alts', Bits(maxlen=1, value=0)),
             ('spdh', Bits(maxlen=6)),
             *args, **kwargs
         )

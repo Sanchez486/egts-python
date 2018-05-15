@@ -20,12 +20,12 @@ class AbsLoopinData(EGTSRecord):
     @property
     def special_inputs(self):
         return {
-            'dsn': self._set_dsn
+            'lin': self._set_dsn
         }
 
     def _set_dsn(self, value):
-        self['linl_lis']['linl'] = value % 2**8
-        self['linh'] = value // 2**8
+        self['linl_lis']['linl'] = value % 2**4
+        self['linh'] = value // 2**4
 
 
 class LinlLis(BitField):

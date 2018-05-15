@@ -5,7 +5,7 @@ from . import *
 def main():
     """Module Main Function"""
     egts_instance = EGTS()
-    input_folder = 'D:\\PycharmProjects\\egts_protocol\\tests\\json\\result_code_simple.json'
+    input_folder = 'D:\\PycharmProjects\\egts_protocol\\tests\\json\\data\\record_response_simple.json'
     egts_instance.load_json(input_folder)
     output_folder = 'D:\\Shared\\test.hex'
 

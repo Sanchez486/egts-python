@@ -24,8 +24,8 @@ class AbsDigSensData(EGTSRecord):
         }
 
     def _set_dsn(self, value):
-        self['dsnl_dsst']['dsnl'] = value % 2**8
-        self['dsnh'] = value // 2**8
+        self['dsnl_dsst']['dsnl'] = value % 2**4
+        self['dsnh'] = value // 2**4
 
 
 class DsnlDsst(BitField):

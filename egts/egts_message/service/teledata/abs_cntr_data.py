@@ -13,6 +13,6 @@ class AbsCntrData(EGTSRecord):
         super(AbsCntrData, self).__init__(
             # Counter number and value are set outside
             ('cn', Byte()),
-            ('cnv', ArrayOfType(of_type=Byte, fixed=True)),
+            ('cnv', ArrayOfType(of_type=Byte, maxlen=3, minlen=3)),
             *args, **kwargs
         )

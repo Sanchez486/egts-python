@@ -28,7 +28,7 @@ class Flags(BitField):
         :param kwargs: parent class kwargs
         """
         super(Flags, self).__init__(
-            ('empty', Bits(maxlen=1)),
+            ('empty', Bits(maxlen=1, value=0b0)),
             # No error by default
             ('llsef', Bits(maxlen=1, value=0b0)),
             # Value unit is set outside
