@@ -1,1 +1,1 @@
-from .interface import *
+from .interface import egts, codes

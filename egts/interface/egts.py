@@ -31,7 +31,7 @@ class EGTS(object):
         return self._message.bytes
 
     def __getitem__(self, item):
-        return self._message['item']
+        return self._message[item]
 
     def __setitem__(self, key, value):
         self._message[key] = value
@@ -76,6 +76,7 @@ class EGTS(object):
             pt = packet_type
         try:
             self._message['service'] = classes.packet_types[pt]()
+            self._message['transport']['pt'] = pt
         except KeyError:
             raise TypeError('Unknown packet type: {}'.format(pt))
 
@@ -108,4 +109,5 @@ class EGTS(object):
         else:
             srt = subrecord_type
         srd[subrecord_number]['srd'] = classes.subrecord_types[srt]()
+        srd[subrecord_number]['srt'] = srt
         return srd[subrecord_number]
