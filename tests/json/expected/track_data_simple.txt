@@ -1,8 +1,8 @@
 EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
 ------------------------------------------------------------------------------------
-File: 'D:\PycharmProjects\egts_protocol\tests\tmp_msg.bin'
+File: 'D:\PycharmProjects\egts_protocol\tests\json\generated\tmp_msg.bin'
 Packet data: 
- 0100000B002B00010001E120000100042024D90F0A0A3E1D00022124D90FEA0000000000000000000064EB1027000074270000E8037820F9
+ 0100000B002B00010001E120000100042024D90F0A0A3E1D00022124D90FEA0000000000000000000064CB4D729A483DA387DAE80378C7C3
 
 
 EGTS Transport Layer:
@@ -29,7 +29,7 @@ EGTS Service Layer:
   Validating result   - 0 (OK)
 
   Packet Type         - EGTS_PT_APPDATA
-  Service Layer CS    - 0xF920
+  Service Layer CS    - 0xC3C7
 
     Service Layer Record:
     ---------------------
@@ -73,9 +73,9 @@ EGTS Service Layer:
            Relative Time      - [1100 ms] (05.06.2018 10:00:03.100 GMT)
              Point Data Exist - 1
              Long. Hemisphere -  1
-             Lat.  Hemisphere -   1
-           LAT                - 0x00002710 (N0.00020955)
-           LON                - 0x00002774 (W0.00042329)
+             Lat.  Hemisphere -   0
+           LAT                - 0x489A724D (S25.52459998)
+           LON                - 0xDA87A33D (W153.65378997)
            SPEED              - 1000  (10.00 kmph)
            DIR                - 120 
            ------------------

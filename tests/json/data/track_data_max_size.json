@@ -20,8 +20,6 @@
               "tds": [
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -35,12 +33,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -49,8 +45,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -64,12 +58,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -78,8 +70,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -93,12 +83,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -107,8 +95,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -122,12 +108,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -136,8 +120,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -151,12 +133,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -165,8 +145,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -180,12 +158,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -194,8 +170,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -209,12 +183,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -223,8 +195,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -238,12 +208,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -252,8 +220,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -267,12 +233,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -281,8 +245,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -296,12 +258,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -310,8 +270,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -325,12 +283,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -339,8 +295,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -354,12 +308,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -368,8 +320,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -383,12 +333,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -397,8 +345,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -412,12 +358,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -426,8 +370,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -441,12 +383,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -455,8 +395,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -470,12 +408,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -485,8 +421,6 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -500,12 +434,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -514,8 +446,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -529,12 +459,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -543,8 +471,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -558,12 +484,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -572,8 +496,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -587,12 +509,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -601,8 +521,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -616,12 +534,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -630,8 +546,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -645,12 +559,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -659,8 +571,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -674,12 +584,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -688,8 +596,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -703,12 +609,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -717,8 +621,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -732,12 +634,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -746,8 +646,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -761,12 +659,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -775,8 +671,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -790,12 +684,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -804,8 +696,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -819,12 +709,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -833,8 +721,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -848,12 +734,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -862,8 +746,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -877,12 +759,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -891,8 +771,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -906,12 +784,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -920,8 +796,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -935,12 +809,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -950,8 +822,6 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -965,12 +835,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -979,8 +847,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -994,12 +860,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1008,8 +872,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1023,12 +885,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1037,8 +897,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1052,12 +910,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1066,8 +922,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1081,12 +935,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1095,8 +947,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1110,12 +960,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1124,8 +972,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1139,12 +985,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1153,8 +997,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1168,12 +1010,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1182,8 +1022,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1197,12 +1035,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1211,8 +1047,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1226,12 +1060,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1240,8 +1072,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1255,12 +1085,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1269,8 +1097,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1284,12 +1110,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1298,8 +1122,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1313,12 +1135,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1327,8 +1147,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1342,12 +1160,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1356,8 +1172,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1371,12 +1185,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1385,8 +1197,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1400,12 +1210,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1415,8 +1223,6 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1430,12 +1236,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1444,8 +1248,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1459,12 +1261,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1473,8 +1273,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1488,12 +1286,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1502,8 +1298,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1517,12 +1311,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1531,8 +1323,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1546,12 +1336,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1560,8 +1348,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1575,12 +1361,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1589,8 +1373,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1604,12 +1386,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1618,8 +1398,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1633,12 +1411,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1647,8 +1423,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1662,12 +1436,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1676,8 +1448,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1691,12 +1461,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1705,8 +1473,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1720,12 +1486,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1734,8 +1498,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1749,12 +1511,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1763,8 +1523,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1778,12 +1536,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1792,8 +1548,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1807,12 +1561,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1821,8 +1573,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1836,12 +1586,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1850,8 +1598,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1865,12 +1611,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1880,8 +1624,6 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1895,12 +1637,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1909,8 +1649,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1924,12 +1662,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1938,8 +1674,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1953,12 +1687,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1967,8 +1699,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -1982,12 +1712,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -1996,8 +1724,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2011,12 +1737,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2025,8 +1749,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2040,12 +1762,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2054,8 +1774,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2069,12 +1787,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2083,8 +1799,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2098,12 +1812,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2112,8 +1824,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2127,12 +1837,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2141,8 +1849,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2156,12 +1862,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2170,8 +1874,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2185,12 +1887,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2199,8 +1899,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2214,12 +1912,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2228,8 +1924,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2243,12 +1937,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2257,8 +1949,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2272,12 +1962,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2286,8 +1974,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2301,12 +1987,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2315,8 +1999,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2330,12 +2012,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2345,8 +2025,6 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2360,12 +2038,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2374,8 +2050,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2389,12 +2063,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2403,8 +2075,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2418,12 +2088,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2432,8 +2100,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2447,12 +2113,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2461,8 +2125,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2476,12 +2138,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2490,8 +2150,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2505,12 +2163,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2519,8 +2175,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2534,12 +2188,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2548,8 +2200,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2563,12 +2213,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2577,8 +2225,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2592,12 +2238,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2606,8 +2250,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2621,12 +2263,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2635,8 +2275,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2650,12 +2288,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2664,8 +2300,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2679,12 +2313,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2693,8 +2325,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2708,12 +2338,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2722,8 +2350,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2737,12 +2363,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2751,8 +2375,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2766,12 +2388,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2780,8 +2400,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2795,12 +2413,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2810,8 +2426,6 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2825,12 +2439,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2839,8 +2451,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2854,12 +2464,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2868,8 +2476,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2883,12 +2489,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2897,8 +2501,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2912,12 +2514,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2926,8 +2526,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2941,12 +2539,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2955,8 +2551,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2970,12 +2564,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -2984,8 +2576,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -2999,12 +2589,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3013,8 +2601,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3028,12 +2614,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3042,8 +2626,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3057,12 +2639,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3071,8 +2651,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3086,12 +2664,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3100,8 +2676,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3115,12 +2689,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3129,8 +2701,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3144,12 +2714,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3158,8 +2726,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3173,12 +2739,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3187,8 +2751,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3202,12 +2764,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3216,8 +2776,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3231,12 +2789,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3245,8 +2801,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3260,12 +2814,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3275,8 +2827,6 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3290,12 +2840,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3304,8 +2852,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3319,12 +2865,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3333,8 +2877,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3348,12 +2890,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3362,8 +2902,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3377,12 +2915,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3391,8 +2927,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3406,12 +2940,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3420,8 +2952,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3435,12 +2965,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3449,8 +2977,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3464,12 +2990,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3478,8 +3002,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3493,12 +3015,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3507,8 +3027,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3522,12 +3040,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3536,8 +3052,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3551,12 +3065,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3565,8 +3077,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3580,12 +3090,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3594,8 +3102,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3609,12 +3115,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3623,8 +3127,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3638,12 +3140,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3652,8 +3152,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3667,12 +3165,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3681,8 +3177,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
@@ -3696,12 +3190,10 @@
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
+                  "lat": 56.0003,
+                  "long": 44.0025,
                   "spdl": "0xe8",
                   "dirh_spdh": {
                     "dirh": 0,
@@ -3710,8 +3202,6 @@
                   "dirl": 120
                 },{
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,

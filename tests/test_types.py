@@ -14,7 +14,8 @@ class TestByte:
         (100, 100),
         ("200", 200),
         (u"150", 150),
-        (True, 1)
+        (True, 1),
+        (255, 255)
     ])
     def test_value_assignment(self, test_input, expected):
         """Test Value Assignment"""
@@ -76,7 +77,8 @@ class TestUShort:
         (100, 100),
         ("200", 200),
         (u"150", 150),
-        (True, 1)
+        (True, 1),
+        (65535, 65535)
     ])
     def test_value_assignment(self, test_input, expected):
         """Test Value Assignment"""
@@ -116,7 +118,7 @@ class TestUInt:
 
     @pytest.mark.parametrize("test_input,expected", [
         (-1, struct.error),
-        (4294967296, TypeError)
+        (4294967296, struct.error)
     ])
     def test_value_assignment_failed(self, test_input, expected):
         """Test incorrect value assignment"""
@@ -140,7 +142,9 @@ class TestUInt:
         (100, 100),
         ("200", 200),
         (u"150", 150),
-        (True, 1)
+        (True, 1),
+        (0, 0),
+        (4294967295, 4294967295)
     ])
     def test_value_assignment(self, test_input, expected):
         """Test Value Assignment"""
@@ -196,7 +200,9 @@ class TestULong:
         (LONG_VALUE, LONG_VALUE),
         ("200", 200),
         (u"150", 150),
-        (True, 1)
+        (True, 1),
+        (0, 0),
+        (18446744073709551615, 18446744073709551615)
     ])
     def test_value_assignment(self, test_input, expected):
         """Test Value Assignment"""
@@ -249,7 +255,9 @@ class TestShort:
         (100, 100),
         ("-200", -200),
         (u"150", 150),
-        (True, 1)
+        (True, 1),
+        (-32768, -32768),
+        (32767, 32767)
     ])
     def test_value_assignment(self, test_input, expected):
         """Test Value Assignment"""
@@ -310,7 +318,9 @@ class TestInt:
         (100, 100),
         ("-200", -200),
         (u"150", 150),
-        (True, 1)
+        (True, 1),
+        (-2147483648, -2147483648),
+        (2147483647, 2147483647)
     ])
     def test_value_assignment(self, test_input, expected):
         """Test Value Assignment"""
@@ -363,7 +373,9 @@ class TestFloat:
         ('-200.5', -200.5),
         (u"150", 150),
         (True, 1.0),
-        (265.42, 265.42)
+        (265.42, 265.42),
+        (-3.4e+38, -3.4e+38),
+        (3.4e+38, 3.4e+38)
     ])
     def test_value_assignment(self, test_input, expected):
         """Test Value Assignment"""
@@ -418,7 +430,9 @@ class TestDouble:
         ('-200.5', -200.5),
         (u"150", 150),
         (True, 1.0),
-        (265.42, 265.42)
+        (265.42, 265.42),
+        (-1.7e+308, -1.7e+308),
+        (-1.7e+308, -1.7e+308)
     ])
     def test_value_assignment(self, test_input, expected):
         """Test Value Assignment"""

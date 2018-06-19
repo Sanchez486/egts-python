@@ -20,33 +20,21 @@
               "tds": [
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 10
                   },
                   "lat": 0,
                   "long": 0,
-                  "spdl": 0,
-                  "dirh_spdh": {
-                    "dirh": 0,
-                    "spdh": 0
-                  },
-                  "dirl": 100
+                  "spd": 0,
+                  "dir": 100
                 },
                 {
                   "flags": {
-                    "lohs": 1,
-                    "lahs": 1,
                     "rtm": 11
                   },
-                  "lat": 10000,
-                  "long": 10100,
-                  "spdl": "0xe8",
-                  "dirh_spdh": {
-                    "dirh": 0,
-                    "spdh": "11"
-                  },
-                  "dirl": 120
+                  "lat": 56.0003,
+                  "long": 44.0025,
+                  "spd": 1000,
+                  "dir": 120
                 }
               ]
             }

@@ -11,6 +11,7 @@ VALIDATOR_PATH = '{}json\\{}'.format(CWD, VALIDATOR_FILENAME)
 
 
 TEST_NAMES = [
+    'track_data_simple',
     'ad_sensors_data_simple',
     'passengers_counters_simple',
     'loopin_data_simple',
@@ -49,7 +50,6 @@ TEST_NAMES = [
     'track_data_and_accel_data',
     'track_data_empty',
     'track_data_max_size',
-    'track_data_simple',
     'transport',
     'vehicle_data_and_term_identity',
     'vehicle_data_simple',

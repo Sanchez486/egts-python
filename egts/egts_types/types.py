@@ -522,7 +522,7 @@ class UShort(IntStored):
         return '<H'
 
 
-class UInt(IntStored):
+class UInt(LongStored):
     """UInt Type"""
     # UInt has fixed size of 4
     _SIZE = 4
@@ -530,7 +530,17 @@ class UInt(IntStored):
     @property
     def _format_char(self):
         """Encoded as unsigned int"""
-        return '<I'
+        return '<L'
+
+    @property
+    def _input_casts(self):
+        """
+        Add long cast in input casts
+        :return: (input format: cast function) dict
+        """
+        casts = super(LongStored, self)._input_casts
+        casts[long] = self._long_cast
+        return casts
 
 
 class ULong(LongStored):

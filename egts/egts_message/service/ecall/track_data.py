@@ -42,16 +42,43 @@ class TrackDataStructure(EGTSRecord):
     def special_inputs(self):
         return {
             'dir': self._set_dir,
-            'spd': self._set_spd
+            'spd': self._set_spd,
+            'lat': self._set_lat,
+            'long': self._set_long
         }
+
+    @staticmethod
+    def is_dig(val):
+        try:
+            float(str(val))
+            return True
+        except ValueError:
+            return False
+
+    def _set_lat(self, value):
+        if self.is_dig(value):
+            val = float(value)
+            self['lahs'] = val >= 0
+            self.value['lat'].value = int(abs(val) / 90 * 0xFFFFFFFF)
+        else:
+            self.value['lat'].value = value
+
+    def _set_long(self, value):
+        if self.is_dig(value):
+            val = float(value)
+            self['lohs'] = val >= 0
+            self.value['long'].value = int(abs(val) / 180 * 0xFFFFFFFF)
+        else:
+            self.value['long'].value = value
 
     def _set_dir(self, value):
         self['dirh_spdh']['dirh'] = value // 2**8
         self['dirl'] = value % 2**8
 
     def _set_spd(self, value):
-        self['dirh_spdh']['spdh'] = value // 2 ** 8
-        self['spdl'] = value % 2 ** 8
+
+        self['dirh_spdh']['spdh'] = int(value) // 2 ** 8
+        self['spdl'] = int(value) % 2 ** 8
 
     def set_fields(self):
         """
@@ -68,6 +95,8 @@ class TrackDataStructure(EGTSRecord):
             raise NotImplementedError('Track Data is incomplete!')
         else:
             flags['tnde'] = 0
+            flags['lahs'] = 0
+            flags['lohs'] = 0
 
 
 class Flags(BitField):
