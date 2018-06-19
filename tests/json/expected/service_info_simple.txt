@@ -1,0 +1,61 @@
+EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
+------------------------------------------------------------------------------------
+File: 'D:\PycharmProjects\egts_protocol\tests\tmp_msg.bin'
+Packet data: 
+ 0100000B001100010001CC06000100040000D90F0101080300010082CB2B
+
+
+EGTS Transport Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Protocol Version    - 1
+  Security Key ID     - 0
+  Flags               - 00000000b (0x00)
+       Prefix         - 00
+       Route          -   0
+       Encryption Alg -    00
+       Compression    -      0
+       Priority       -       00 (the highest)
+  Header Length       - 11
+  Header Encoding     - 0
+  Frame Data Length   - 17
+  Packet ID           - 1
+  No route info       -
+  Header Check Sum    - 0xCC
+
+EGTS Service Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Packet Type         - EGTS_PT_APPDATA
+  Service Layer CS    - 0x2BCB
+
+    Service Layer Record:
+    ---------------------
+    Validating Result    - 0 (OK)
+
+    Record Length               - 6
+    Record Number               - 1
+    Record flags                -     00000100b (0x04)
+        Sourse Service On Device    - 0
+        Recipient Service On Device -  0
+        Group Flag                  -   0
+        Record Processing Priority  -    00 (the highest)
+        Time Field Exists           -      1
+        Event ID Field Exists       -       0
+        Object ID Field Exists      -        0
+    Time                        - 0x0FD90000 (05.06.2018 07:25:52 GMT)
+    Source Service Type         - 1 (EGTS_AUTH_SERVICE) 
+    Recipient Service Type      - 1 (EGTS_AUTH_SERVICE) 
+
+       Subrecord Data:
+       ------------------
+       Validating Result   - 165 (Unknown service subrecord type)
+
+       Subrecord Type      - 8 (EGTS_SR_SRV_INFO)
+       Subrecord Length    - 3
+
+
+-------------------------------------------------------------
+Press any key to exit...

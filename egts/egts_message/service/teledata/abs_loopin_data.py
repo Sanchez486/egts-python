@@ -17,6 +17,16 @@ class AbsLoopinData(EGTSRecord):
             *args, **kwargs
         )
 
+    @property
+    def special_inputs(self):
+        return {
+            'lin': self._set_dsn
+        }
+
+    def _set_dsn(self, value):
+        self['linl_lis']['linl'] = value % 2**4
+        self['linh'] = value // 2**4
+
 
 class LinlLis(BitField):
     """EGTS_SR_ABS_LOOPIN_DATA Sensor State Bits and Number Low Bits Field"""

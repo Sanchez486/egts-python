@@ -1,5 +1,6 @@
 """EGTS_SR_POS_DATA"""
 from ....egts_types import *
+from ....egts_types.date_time_field import DateTime
 
 
 class PosData(EGTSRecord):
@@ -12,13 +13,13 @@ class PosData(EGTSRecord):
         """
         super(PosData, self).__init__(
             # All set outside
-            ('ntm', UInt()),
+            ('ntm', DateTime()),
             ('lat', UInt()),
             ('long', UInt()),
             ('flags', Flags()),
             ('spdl', Byte()),
             ('dirh_alts_spdh', DirhAltsSpdh()),
-            ('dir', Byte()),
+            ('dirl', Byte()),
             ('odm', ArrayOfType(of_type=Byte, maxlen=3, minlen=3)),
             ('din', Byte()),
             ('src', Byte()),
@@ -28,12 +29,31 @@ class PosData(EGTSRecord):
             *args, **kwargs
         )
 
+    @property
+    def special_inputs(self):
+        return {
+            'dir': self._set_dir,
+            'spd': self._set_spd
+        }
+
+    def _set_dir(self, value):
+        self['dirh_alts_spdh']['dirh'] = value // 2**8
+        self['dirl'] = value % 2**8
+
+    def _set_spd(self, value):
+        self['dirh_alts_spdh']['spdh'] = value // 2 ** 8
+        self['spdl'] = value % 2 ** 8
+
     def set_fields(self):
         """
         Calculate necessary fields
         """
         flags = self['flags']
-        flags['alte'] = int(self['alt'].specified)
+        if self['alt'].specified:
+            flags['alte'] = 0b1
+        else:
+            flags['alte'] = 0b1
+            self['dirh_alts_spdh']['alts'] = 0b0
 
 
 class DirhAltsSpdh(BitField):
@@ -46,7 +66,7 @@ class DirhAltsSpdh(BitField):
         """
         super(DirhAltsSpdh, self).__init__(
             ('dirh', Bits(maxlen=1)),
-            ('alts', Bits(maxlen=1)),
+            ('alts', Bits(maxlen=1, value=0)),
             ('spdh', Bits(maxlen=6)),
             *args, **kwargs
         )

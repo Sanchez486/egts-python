@@ -1,0 +1,85 @@
+EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
+------------------------------------------------------------------------------------
+File: 'D:\PycharmProjects\egts_protocol\tests\tmp_msg.bin'
+Packet data: 
+ 0100000B003000010001E725000100040000D90F0404332200500100000001000000020801020304050607083930103930303132333435363738391C7B
+
+
+EGTS Transport Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Protocol Version    - 1
+  Security Key ID     - 0
+  Flags               - 00000000b (0x00)
+       Prefix         - 00
+       Route          -   0
+       Encryption Alg -    00
+       Compression    -      0
+       Priority       -       00 (the highest)
+  Header Length       - 11
+  Header Encoding     - 0
+  Frame Data Length   - 48
+  Packet ID           - 1
+  No route info       -
+  Header Check Sum    - 0xE7
+
+EGTS Service Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Packet Type         - EGTS_PT_APPDATA
+  Service Layer CS    - 0x7B1C
+
+    Service Layer Record:
+    ---------------------
+    Validating Result    - 0 (OK)
+
+    Record Length               - 37
+    Record Number               - 1
+    Record flags                -     00000100b (0x04)
+        Sourse Service On Device    - 0
+        Recipient Service On Device -  0
+        Group Flag                  -   0
+        Record Processing Priority  -    00 (the highest)
+        Time Field Exists           -      1
+        Event ID Field Exists       -       0
+        Object ID Field Exists      -        0
+    Time                        - 0x0FD90000 (05.06.2018 07:25:52 GMT)
+    Source Service Type         - 4 (EGTS_COMMANDS_SERVICE) 
+    Recipient Service Type      - 4 (EGTS_COMMANDS_SERVICE) 
+
+       Subrecord Data:
+       ------------------
+       Validating Result   - 0 (OK)
+
+       Subrecord Type      - 51 (EGTS_SR_COMMAND_DATA)
+       Subrecord Length    - 34
+       Command Type           - 0101b (EGTS_CT_COM)
+       Confirmation Type      -     0000b (EGTS_CC_OK)
+       Command Identifier     - 1
+       Source Identifier      - 1
+       Flags                  - 00000010b (0x02)
+         ACFE                 -       1
+         CHSFE                -        0
+       Auth Code Length       - 8
+       AuthCode               - 0102030405060708
+       Command Data           - 393010393030313233343536373839
+           Address            - 12345
+           SZ                 - 0001b
+           ACT                -     0000b
+           Command Code       - 0x3039 (unspecified)
+       Command Type           - 0101b (EGTS_CT_COM)
+       Confirmation Type      -     0000b (EGTS_CC_OK)
+       Command Identifier     - 1
+       Source Identifier      - 1
+       Flags                  - 00000010b (0x02)
+         ACFE                 -       1
+         CHSFE                -        0
+       Auth Code Length       - 8
+       AuthCode               - 0102030405060708
+       Command Data           - 393010393030313233343536373839
+
+
+-------------------------------------------------------------
+Press any key to exit...

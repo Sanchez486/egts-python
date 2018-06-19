@@ -1,0 +1,32 @@
+{
+  "transport": {
+    "pt": 1
+  },
+  "service": {
+    "sdr": [
+      {
+        "rfl": {
+          "ssod": 0,
+          "rsod": 0
+        },
+        "tm": "0x0fd90000",
+        "sst": 2,
+        "rst": 2,
+        "rd": [
+          {
+            "srt": 21,
+            "srd": {
+              "st": 2,
+              "mpsv": 150,
+              "bbv": 200,
+              "ibv": 250,
+              "nms": 1,
+              "ibu": 0,
+              "bbu": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

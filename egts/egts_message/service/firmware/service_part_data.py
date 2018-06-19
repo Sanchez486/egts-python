@@ -30,4 +30,4 @@ class ServicePartData(EGTSRecord):
         """
         Calculate necessary fields
         """
-        self['odh']['wos'] = crc.data_crc(self['od'].bytes())
+        self['odh']['wos'] = crc.data_crc(self['od'].bytes)

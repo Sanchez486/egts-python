@@ -1,0 +1,37 @@
+{
+  "transport": {
+    "pt": 1
+  },
+  "service": {
+    "sdr": [
+      {
+        "rfl": {
+          "ssod": 0,
+          "rsod": 0
+        },
+        "tm": "0x0fd90000",
+        "sst": 2,
+        "rst": 2,
+        "rd": [
+          {
+            "srt": 28,
+            "srd": {
+              "drl": 0,
+              "maddr": 300,
+              "pcd": {
+                "ipq1": 1,
+                "opq1": 1,
+                "ipq8": 8,
+                "opq8": 8,
+                "ipq3": 3,
+                "opq3": 3
+              },
+              "ipq2": 2,
+              "opq2": 2
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

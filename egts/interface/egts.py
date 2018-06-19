@@ -1,17 +1,19 @@
 """MAIN EGTS INTERFACE"""
 import json
 import enum
-from ..egts_message import *
+from ..egts_message import EGTSMessage
 from . import classes
 
 
 class EGTS(object):
     """EGTS Message interface"""
-    def __init__(self, packet_type=None):
+    def __init__(self, packet_type=None, *records):
         """Constructor"""
         self._message = EGTSMessage()
         if packet_type:
             self.set_packet_type(packet_type)
+            for subrecords in records:
+                self.add_record(*subrecords)
 
     def __str__(self):
         """
@@ -20,6 +22,20 @@ class EGTS(object):
         """
         return str(self._message)
 
+    @property
+    def bytes(self):
+        """
+        Get message's bytes representation
+        :return: byte string
+        """
+        return self._message.bytes
+
+    def __getitem__(self, item):
+        return self._message[item]
+
+    def __setitem__(self, key, value):
+        self._message[key] = value
+
     def load_json(self, json_path):
         """
         Read EGTS message from json
@@ -27,16 +43,19 @@ class EGTS(object):
         """
         json_file = open(json_path)
         egts = json.load(json_file)
-        # <FIX>
-        if egts['service']:
+        if 'service' in egts:
             self.set_packet_type(egts['transport']['pt'])
             for record in egts['service']['sdr']:
                 types = list()
                 for subrecord in record['rd']:
                     types.append(subrecord['srt'])
                 self.add_record(*types)
-        # </FIX>
+        else:
+            self._message._value.pop('service')
+            self._message._value.pop('sfrcs')
         self._message.value = egts
+        if not self._message.is_ready():
+            raise ValueError('Incomplete JSON! Some required fields are unspecified!')
 
     def write(self, output_folder):
         """
@@ -44,8 +63,7 @@ class EGTS(object):
         :param output_folder: path to write
         """
         output_file = open(output_folder, 'wb')
-        for each_byte in self._message.bytes:
-            output_file.write(chr(each_byte))
+        output_file.write(self.bytes)
 
     def set_packet_type(self, packet_type):
         """
@@ -56,7 +74,11 @@ class EGTS(object):
             pt = packet_type.value
         else:
             pt = packet_type
-        self._message['service'] = classes.packet_types[pt]()
+        try:
+            self._message['service'] = classes.packet_types[pt]()
+            self._message['transport']['pt'] = pt
+        except KeyError:
+            raise TypeError('Unknown packet type: {}'.format(pt))
 
     def add_record(self, *subrecord_types):
         """
@@ -69,6 +91,7 @@ class EGTS(object):
         record_number = sdr.quantity - 1
         for subrecord_type in subrecord_types:
             self.add_subrecord(record_number, subrecord_type)
+        return sdr[record_number]
 
     def add_subrecord(self, record_number, subrecord_type):
         """
@@ -86,3 +109,5 @@ class EGTS(object):
         else:
             srt = subrecord_type
         srd[subrecord_number]['srd'] = classes.subrecord_types[srt]()
+        srd[subrecord_number]['srt'] = srt
+        return srd[subrecord_number]

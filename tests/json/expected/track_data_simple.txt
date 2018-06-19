@@ -1,0 +1,85 @@
+EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
+------------------------------------------------------------------------------------
+File: 'D:\PycharmProjects\egts_protocol\tests\json\generated\tmp_msg.bin'
+Packet data: 
+ 0100000B002B00010001E120000100042024D90F0A0A3E1D00022124D90FEA0000000000000000000064CB4D729A483DA387DAE80378C7C3
+
+
+EGTS Transport Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Protocol Version    - 1
+  Security Key ID     - 0
+  Flags               - 00000000b (0x00)
+       Prefix         - 00
+       Route          -   0
+       Encryption Alg -    00
+       Compression    -      0
+       Priority       -       00 (the highest)
+  Header Length       - 11
+  Header Encoding     - 0
+  Frame Data Length   - 43
+  Packet ID           - 1
+  No route info       -
+  Header Check Sum    - 0xE1
+
+EGTS Service Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Packet Type         - EGTS_PT_APPDATA
+  Service Layer CS    - 0xC3C7
+
+    Service Layer Record:
+    ---------------------
+    Validating Result    - 0 (OK)
+
+    Record Length               - 32
+    Record Number               - 1
+    Record flags                -     00000100b (0x04)
+        Sourse Service On Device    - 0
+        Recipient Service On Device -  0
+        Group Flag                  -   0
+        Record Processing Priority  -    00 (the highest)
+        Time Field Exists           -      1
+        Event ID Field Exists       -       0
+        Object ID Field Exists      -        0
+    Time                        - 0x0FD92420 (05.06.2018 10:00:00 GMT)
+    Source Service Type         - 10 (EGTS_ECALL_SERVICE) 
+    Recipient Service Type      - 10 (EGTS_ECALL_SERVICE) 
+
+       Subrecord Data:
+       ------------------
+       Validating Result   - 0 (OK)
+
+       Subrecord Type      - 62 (EGTS_SR_ECALL_TRACK_DATA)
+       Subrecord Length    - 29
+       Structures Amount      - 2
+       Absolute Time          - 0x0FD92421 (05.06.2018 10:00:01.000  GMT)
+       Track Points Data Structures:
+       -----------------------------
+                              1
+           Relative Time      - [1000 ms] (05.06.2018 10:00:02.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              2
+           Relative Time      - [1100 ms] (05.06.2018 10:00:03.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   0
+           LAT                - 0x489A724D (S25.52459998)
+           LON                - 0xDA87A33D (W153.65378997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+
+
+-------------------------------------------------------------
+Press any key to exit...

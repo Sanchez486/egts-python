@@ -1,0 +1,66 @@
+{
+  "transport": {
+    "pt": 1
+  },
+  "service": {
+    "sdr": [
+      {
+        "rfl": {
+          "ssod": 0,
+          "rsod": 0
+        },
+        "tm": "0x0fd90000",
+        "sst": 10,
+        "rst": 10,
+        "rd": [
+          {
+            "srt": 62,
+            "srd": {
+              "atm": 300000,
+              "tds": [
+                {
+                  "flags": {
+                    "rtm": 10
+                  },
+                  "lat": 0,
+                  "long": 0,
+                  "spd": 0,
+                  "dir": 100
+                },
+                {
+                  "flags": {
+                    "rtm": 11
+                  },
+                  "lat": 56.0003,
+                  "long": 44.0025,
+                  "spd": 1000,
+                  "dir": 120
+                }
+              ]
+            }
+          },
+          {
+            "srt": 20,
+            "srd": {
+              "atm": "0x02ADC4F6",
+              "ads": [
+                {
+                  "rtm": 0,
+                  "xaav": 0,
+                  "yaav": 0,
+                  "zaav": 0
+                },
+                {
+                  "rtm": 1,
+                  "xaav": 1,
+                  "yaav": 1,
+                  "zaav": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

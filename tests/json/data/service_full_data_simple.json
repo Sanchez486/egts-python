@@ -1,0 +1,36 @@
+{
+  "transport": {
+    "pt": 1
+  },
+  "service": {
+    "sdr": [
+      {
+        "rfl": {
+          "ssod": 0,
+          "rsod": 0
+        },
+        "tm": "0x0fd90000",
+        "sst": 9,
+        "rst": 9,
+        "rd": [
+          {
+            "srt": 34,
+            "srd": {
+              "odh": {
+                "oa": {
+                  "ot": 0,
+                  "mt": 0
+                },
+                "cmi": 123,
+                "ver": 1,
+                "wos": 12346,
+                "fn": "abcdeabcde"
+              },
+              "od": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2615 @@
+EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
+------------------------------------------------------------------------------------
+File: 'D:\PycharmProjects\egts_protocol\tests\json\generated\tmp_msg.bin'
+Packet data: 
+ 0100000B00070C0100012AFC0B0100040000D90F0A0A3EF90BFFE0930400EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064EB8B2C4A9F42D2943EE80378EA0000000000000000000064D0B0
+
+
+EGTS Transport Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Protocol Version    - 1
+  Security Key ID     - 0
+  Flags               - 00000000b (0x00)
+       Prefix         - 00
+       Route          -   0
+       Encryption Alg -    00
+       Compression    -      0
+       Priority       -       00 (the highest)
+  Header Length       - 11
+  Header Encoding     - 0
+  Frame Data Length   - 3079
+  Packet ID           - 1
+  No route info       -
+  Header Check Sum    - 0x2A
+
+EGTS Service Layer:
+---------------------
+  Validating result   - 0 (OK)
+
+  Packet Type         - EGTS_PT_APPDATA
+  Service Layer CS    - 0xB0D0
+
+    Service Layer Record:
+    ---------------------
+    Validating Result    - 0 (OK)
+
+    Record Length               - 3068
+    Record Number               - 1
+    Record flags                -     00000100b (0x04)
+        Sourse Service On Device    - 0
+        Recipient Service On Device -  0
+        Group Flag                  -   0
+        Record Processing Priority  -    00 (the highest)
+        Time Field Exists           -      1
+        Event ID Field Exists       -       0
+        Object ID Field Exists      -        0
+    Time                        - 0x0FD90000 (05.06.2018 07:25:52 GMT)
+    Source Service Type         - 10 (EGTS_ECALL_SERVICE) 
+    Recipient Service Type      - 10 (EGTS_ECALL_SERVICE) 
+
+       Subrecord Data:
+       ------------------
+       Validating Result   - 0 (OK)
+
+       Subrecord Type      - 62 (EGTS_SR_ECALL_TRACK_DATA)
+       Subrecord Length    - 3065
+       Structures Amount      - 255
+       Absolute Time          - 0x000493E0 (04.01.2010 11:20:00.000  GMT)
+       Track Points Data Structures:
+       -----------------------------
+                              1
+           Relative Time      - [1000 ms] (04.01.2010 11:20:01.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              2
+           Relative Time      - [1100 ms] (04.01.2010 11:20:02.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              3
+           Relative Time      - [1000 ms] (04.01.2010 11:20:03.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              4
+           Relative Time      - [1100 ms] (04.01.2010 11:20:04.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              5
+           Relative Time      - [1000 ms] (04.01.2010 11:20:05.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              6
+           Relative Time      - [1100 ms] (04.01.2010 11:20:06.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              7
+           Relative Time      - [1000 ms] (04.01.2010 11:20:07.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              8
+           Relative Time      - [1100 ms] (04.01.2010 11:20:08.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              9
+           Relative Time      - [1000 ms] (04.01.2010 11:20:09.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              10
+           Relative Time      - [1100 ms] (04.01.2010 11:20:10.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              11
+           Relative Time      - [1000 ms] (04.01.2010 11:20:11.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              12
+           Relative Time      - [1100 ms] (04.01.2010 11:20:12.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              13
+           Relative Time      - [1000 ms] (04.01.2010 11:20:13.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              14
+           Relative Time      - [1100 ms] (04.01.2010 11:20:14.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              15
+           Relative Time      - [1000 ms] (04.01.2010 11:20:15.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              16
+           Relative Time      - [1100 ms] (04.01.2010 11:20:16.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              17
+           Relative Time      - [1000 ms] (04.01.2010 11:20:17.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              18
+           Relative Time      - [1100 ms] (04.01.2010 11:20:18.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              19
+           Relative Time      - [1000 ms] (04.01.2010 11:20:19.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              20
+           Relative Time      - [1100 ms] (04.01.2010 11:20:21.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              21
+           Relative Time      - [1000 ms] (04.01.2010 11:20:22.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              22
+           Relative Time      - [1100 ms] (04.01.2010 11:20:23.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              23
+           Relative Time      - [1000 ms] (04.01.2010 11:20:24.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              24
+           Relative Time      - [1100 ms] (04.01.2010 11:20:25.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              25
+           Relative Time      - [1000 ms] (04.01.2010 11:20:26.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              26
+           Relative Time      - [1100 ms] (04.01.2010 11:20:27.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              27
+           Relative Time      - [1000 ms] (04.01.2010 11:20:28.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              28
+           Relative Time      - [1100 ms] (04.01.2010 11:20:29.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              29
+           Relative Time      - [1000 ms] (04.01.2010 11:20:30.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              30
+           Relative Time      - [1100 ms] (04.01.2010 11:20:31.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              31
+           Relative Time      - [1000 ms] (04.01.2010 11:20:32.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              32
+           Relative Time      - [1100 ms] (04.01.2010 11:20:33.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              33
+           Relative Time      - [1000 ms] (04.01.2010 11:20:34.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              34
+           Relative Time      - [1100 ms] (04.01.2010 11:20:35.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              35
+           Relative Time      - [1000 ms] (04.01.2010 11:20:36.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              36
+           Relative Time      - [1100 ms] (04.01.2010 11:20:37.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              37
+           Relative Time      - [1000 ms] (04.01.2010 11:20:38.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              38
+           Relative Time      - [1100 ms] (04.01.2010 11:20:39.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              39
+           Relative Time      - [1000 ms] (04.01.2010 11:20:40.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              40
+           Relative Time      - [1100 ms] (04.01.2010 11:20:42.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              41
+           Relative Time      - [1000 ms] (04.01.2010 11:20:43.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              42
+           Relative Time      - [1100 ms] (04.01.2010 11:20:44.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              43
+           Relative Time      - [1000 ms] (04.01.2010 11:20:45.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              44
+           Relative Time      - [1100 ms] (04.01.2010 11:20:46.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              45
+           Relative Time      - [1000 ms] (04.01.2010 11:20:47.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              46
+           Relative Time      - [1100 ms] (04.01.2010 11:20:48.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              47
+           Relative Time      - [1000 ms] (04.01.2010 11:20:49.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              48
+           Relative Time      - [1100 ms] (04.01.2010 11:20:50.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              49
+           Relative Time      - [1000 ms] (04.01.2010 11:20:51.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              50
+           Relative Time      - [1100 ms] (04.01.2010 11:20:52.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              51
+           Relative Time      - [1000 ms] (04.01.2010 11:20:53.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              52
+           Relative Time      - [1100 ms] (04.01.2010 11:20:54.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              53
+           Relative Time      - [1000 ms] (04.01.2010 11:20:55.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              54
+           Relative Time      - [1100 ms] (04.01.2010 11:20:56.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              55
+           Relative Time      - [1000 ms] (04.01.2010 11:20:57.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              56
+           Relative Time      - [1100 ms] (04.01.2010 11:20:58.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              57
+           Relative Time      - [1000 ms] (04.01.2010 11:20:59.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              58
+           Relative Time      - [1100 ms] (04.01.2010 11:21:00.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              59
+           Relative Time      - [1000 ms] (04.01.2010 11:21:01.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              60
+           Relative Time      - [1100 ms] (04.01.2010 11:21:03.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              61
+           Relative Time      - [1000 ms] (04.01.2010 11:21:04.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              62
+           Relative Time      - [1100 ms] (04.01.2010 11:21:05.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              63
+           Relative Time      - [1000 ms] (04.01.2010 11:21:06.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              64
+           Relative Time      - [1100 ms] (04.01.2010 11:21:07.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              65
+           Relative Time      - [1000 ms] (04.01.2010 11:21:08.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              66
+           Relative Time      - [1100 ms] (04.01.2010 11:21:09.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              67
+           Relative Time      - [1000 ms] (04.01.2010 11:21:10.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              68
+           Relative Time      - [1100 ms] (04.01.2010 11:21:11.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              69
+           Relative Time      - [1000 ms] (04.01.2010 11:21:12.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              70
+           Relative Time      - [1100 ms] (04.01.2010 11:21:13.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              71
+           Relative Time      - [1000 ms] (04.01.2010 11:21:14.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              72
+           Relative Time      - [1100 ms] (04.01.2010 11:21:15.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              73
+           Relative Time      - [1000 ms] (04.01.2010 11:21:16.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              74
+           Relative Time      - [1100 ms] (04.01.2010 11:21:17.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              75
+           Relative Time      - [1000 ms] (04.01.2010 11:21:18.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              76
+           Relative Time      - [1100 ms] (04.01.2010 11:21:19.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              77
+           Relative Time      - [1000 ms] (04.01.2010 11:21:20.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              78
+           Relative Time      - [1100 ms] (04.01.2010 11:21:21.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              79
+           Relative Time      - [1000 ms] (04.01.2010 11:21:22.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              80
+           Relative Time      - [1100 ms] (04.01.2010 11:21:24.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              81
+           Relative Time      - [1000 ms] (04.01.2010 11:21:25.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              82
+           Relative Time      - [1100 ms] (04.01.2010 11:21:26.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              83
+           Relative Time      - [1000 ms] (04.01.2010 11:21:27.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              84
+           Relative Time      - [1100 ms] (04.01.2010 11:21:28.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              85
+           Relative Time      - [1000 ms] (04.01.2010 11:21:29.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              86
+           Relative Time      - [1100 ms] (04.01.2010 11:21:30.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              87
+           Relative Time      - [1000 ms] (04.01.2010 11:21:31.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              88
+           Relative Time      - [1100 ms] (04.01.2010 11:21:32.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              89
+           Relative Time      - [1000 ms] (04.01.2010 11:21:33.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              90
+           Relative Time      - [1100 ms] (04.01.2010 11:21:34.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              91
+           Relative Time      - [1000 ms] (04.01.2010 11:21:35.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              92
+           Relative Time      - [1100 ms] (04.01.2010 11:21:36.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              93
+           Relative Time      - [1000 ms] (04.01.2010 11:21:37.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              94
+           Relative Time      - [1100 ms] (04.01.2010 11:21:38.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              95
+           Relative Time      - [1000 ms] (04.01.2010 11:21:39.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              96
+           Relative Time      - [1100 ms] (04.01.2010 11:21:40.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              97
+           Relative Time      - [1000 ms] (04.01.2010 11:21:41.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              98
+           Relative Time      - [1100 ms] (04.01.2010 11:21:42.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              99
+           Relative Time      - [1000 ms] (04.01.2010 11:21:43.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              100
+           Relative Time      - [1100 ms] (04.01.2010 11:21:45.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              101
+           Relative Time      - [1000 ms] (04.01.2010 11:21:46.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              102
+           Relative Time      - [1100 ms] (04.01.2010 11:21:47.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              103
+           Relative Time      - [1000 ms] (04.01.2010 11:21:48.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              104
+           Relative Time      - [1100 ms] (04.01.2010 11:21:49.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              105
+           Relative Time      - [1000 ms] (04.01.2010 11:21:50.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              106
+           Relative Time      - [1100 ms] (04.01.2010 11:21:51.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              107
+           Relative Time      - [1000 ms] (04.01.2010 11:21:52.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              108
+           Relative Time      - [1100 ms] (04.01.2010 11:21:53.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              109
+           Relative Time      - [1000 ms] (04.01.2010 11:21:54.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              110
+           Relative Time      - [1100 ms] (04.01.2010 11:21:55.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              111
+           Relative Time      - [1000 ms] (04.01.2010 11:21:56.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              112
+           Relative Time      - [1100 ms] (04.01.2010 11:21:57.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              113
+           Relative Time      - [1000 ms] (04.01.2010 11:21:58.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              114
+           Relative Time      - [1100 ms] (04.01.2010 11:21:59.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              115
+           Relative Time      - [1000 ms] (04.01.2010 11:22:00.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              116
+           Relative Time      - [1100 ms] (04.01.2010 11:22:01.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              117
+           Relative Time      - [1000 ms] (04.01.2010 11:22:02.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              118
+           Relative Time      - [1100 ms] (04.01.2010 11:22:03.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              119
+           Relative Time      - [1000 ms] (04.01.2010 11:22:04.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              120
+           Relative Time      - [1100 ms] (04.01.2010 11:22:06.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              121
+           Relative Time      - [1000 ms] (04.01.2010 11:22:07.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              122
+           Relative Time      - [1100 ms] (04.01.2010 11:22:08.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              123
+           Relative Time      - [1000 ms] (04.01.2010 11:22:09.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              124
+           Relative Time      - [1100 ms] (04.01.2010 11:22:10.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              125
+           Relative Time      - [1000 ms] (04.01.2010 11:22:11.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              126
+           Relative Time      - [1100 ms] (04.01.2010 11:22:12.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              127
+           Relative Time      - [1000 ms] (04.01.2010 11:22:13.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              128
+           Relative Time      - [1100 ms] (04.01.2010 11:22:14.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              129
+           Relative Time      - [1000 ms] (04.01.2010 11:22:15.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              130
+           Relative Time      - [1100 ms] (04.01.2010 11:22:16.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              131
+           Relative Time      - [1000 ms] (04.01.2010 11:22:17.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              132
+           Relative Time      - [1100 ms] (04.01.2010 11:22:18.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              133
+           Relative Time      - [1000 ms] (04.01.2010 11:22:19.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              134
+           Relative Time      - [1100 ms] (04.01.2010 11:22:20.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              135
+           Relative Time      - [1000 ms] (04.01.2010 11:22:21.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              136
+           Relative Time      - [1100 ms] (04.01.2010 11:22:22.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              137
+           Relative Time      - [1000 ms] (04.01.2010 11:22:23.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              138
+           Relative Time      - [1100 ms] (04.01.2010 11:22:24.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              139
+           Relative Time      - [1000 ms] (04.01.2010 11:22:25.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              140
+           Relative Time      - [1100 ms] (04.01.2010 11:22:27.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              141
+           Relative Time      - [1000 ms] (04.01.2010 11:22:28.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              142
+           Relative Time      - [1100 ms] (04.01.2010 11:22:29.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              143
+           Relative Time      - [1000 ms] (04.01.2010 11:22:30.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              144
+           Relative Time      - [1100 ms] (04.01.2010 11:22:31.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              145
+           Relative Time      - [1000 ms] (04.01.2010 11:22:32.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              146
+           Relative Time      - [1100 ms] (04.01.2010 11:22:33.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              147
+           Relative Time      - [1000 ms] (04.01.2010 11:22:34.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              148
+           Relative Time      - [1100 ms] (04.01.2010 11:22:35.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              149
+           Relative Time      - [1000 ms] (04.01.2010 11:22:36.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              150
+           Relative Time      - [1100 ms] (04.01.2010 11:22:37.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              151
+           Relative Time      - [1000 ms] (04.01.2010 11:22:38.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              152
+           Relative Time      - [1100 ms] (04.01.2010 11:22:39.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              153
+           Relative Time      - [1000 ms] (04.01.2010 11:22:40.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              154
+           Relative Time      - [1100 ms] (04.01.2010 11:22:41.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              155
+           Relative Time      - [1000 ms] (04.01.2010 11:22:42.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              156
+           Relative Time      - [1100 ms] (04.01.2010 11:22:43.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              157
+           Relative Time      - [1000 ms] (04.01.2010 11:22:44.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              158
+           Relative Time      - [1100 ms] (04.01.2010 11:22:45.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              159
+           Relative Time      - [1000 ms] (04.01.2010 11:22:46.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              160
+           Relative Time      - [1100 ms] (04.01.2010 11:22:48.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              161
+           Relative Time      - [1000 ms] (04.01.2010 11:22:49.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              162
+           Relative Time      - [1100 ms] (04.01.2010 11:22:50.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              163
+           Relative Time      - [1000 ms] (04.01.2010 11:22:51.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              164
+           Relative Time      - [1100 ms] (04.01.2010 11:22:52.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              165
+           Relative Time      - [1000 ms] (04.01.2010 11:22:53.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              166
+           Relative Time      - [1100 ms] (04.01.2010 11:22:54.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              167
+           Relative Time      - [1000 ms] (04.01.2010 11:22:55.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              168
+           Relative Time      - [1100 ms] (04.01.2010 11:22:56.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              169
+           Relative Time      - [1000 ms] (04.01.2010 11:22:57.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              170
+           Relative Time      - [1100 ms] (04.01.2010 11:22:58.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              171
+           Relative Time      - [1000 ms] (04.01.2010 11:22:59.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              172
+           Relative Time      - [1100 ms] (04.01.2010 11:23:00.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              173
+           Relative Time      - [1000 ms] (04.01.2010 11:23:01.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              174
+           Relative Time      - [1100 ms] (04.01.2010 11:23:02.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              175
+           Relative Time      - [1000 ms] (04.01.2010 11:23:03.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              176
+           Relative Time      - [1100 ms] (04.01.2010 11:23:04.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              177
+           Relative Time      - [1000 ms] (04.01.2010 11:23:05.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              178
+           Relative Time      - [1100 ms] (04.01.2010 11:23:06.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              179
+           Relative Time      - [1000 ms] (04.01.2010 11:23:07.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              180
+           Relative Time      - [1100 ms] (04.01.2010 11:23:09.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              181
+           Relative Time      - [1000 ms] (04.01.2010 11:23:10.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              182
+           Relative Time      - [1100 ms] (04.01.2010 11:23:11.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              183
+           Relative Time      - [1000 ms] (04.01.2010 11:23:12.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              184
+           Relative Time      - [1100 ms] (04.01.2010 11:23:13.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              185
+           Relative Time      - [1000 ms] (04.01.2010 11:23:14.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              186
+           Relative Time      - [1100 ms] (04.01.2010 11:23:15.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              187
+           Relative Time      - [1000 ms] (04.01.2010 11:23:16.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              188
+           Relative Time      - [1100 ms] (04.01.2010 11:23:17.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              189
+           Relative Time      - [1000 ms] (04.01.2010 11:23:18.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              190
+           Relative Time      - [1100 ms] (04.01.2010 11:23:19.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              191
+           Relative Time      - [1000 ms] (04.01.2010 11:23:20.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              192
+           Relative Time      - [1100 ms] (04.01.2010 11:23:21.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              193
+           Relative Time      - [1000 ms] (04.01.2010 11:23:22.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              194
+           Relative Time      - [1100 ms] (04.01.2010 11:23:23.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              195
+           Relative Time      - [1000 ms] (04.01.2010 11:23:24.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              196
+           Relative Time      - [1100 ms] (04.01.2010 11:23:25.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              197
+           Relative Time      - [1000 ms] (04.01.2010 11:23:26.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              198
+           Relative Time      - [1100 ms] (04.01.2010 11:23:27.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              199
+           Relative Time      - [1000 ms] (04.01.2010 11:23:28.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              200
+           Relative Time      - [1100 ms] (04.01.2010 11:23:30.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              201
+           Relative Time      - [1000 ms] (04.01.2010 11:23:31.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              202
+           Relative Time      - [1100 ms] (04.01.2010 11:23:32.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              203
+           Relative Time      - [1000 ms] (04.01.2010 11:23:33.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              204
+           Relative Time      - [1100 ms] (04.01.2010 11:23:34.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              205
+           Relative Time      - [1000 ms] (04.01.2010 11:23:35.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              206
+           Relative Time      - [1100 ms] (04.01.2010 11:23:36.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              207
+           Relative Time      - [1000 ms] (04.01.2010 11:23:37.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              208
+           Relative Time      - [1100 ms] (04.01.2010 11:23:38.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              209
+           Relative Time      - [1000 ms] (04.01.2010 11:23:39.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              210
+           Relative Time      - [1100 ms] (04.01.2010 11:23:40.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              211
+           Relative Time      - [1000 ms] (04.01.2010 11:23:41.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              212
+           Relative Time      - [1100 ms] (04.01.2010 11:23:42.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              213
+           Relative Time      - [1000 ms] (04.01.2010 11:23:43.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              214
+           Relative Time      - [1100 ms] (04.01.2010 11:23:44.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              215
+           Relative Time      - [1000 ms] (04.01.2010 11:23:45.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              216
+           Relative Time      - [1100 ms] (04.01.2010 11:23:46.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              217
+           Relative Time      - [1000 ms] (04.01.2010 11:23:47.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              218
+           Relative Time      - [1100 ms] (04.01.2010 11:23:48.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              219
+           Relative Time      - [1000 ms] (04.01.2010 11:23:49.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              220
+           Relative Time      - [1100 ms] (04.01.2010 11:23:51.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              221
+           Relative Time      - [1000 ms] (04.01.2010 11:23:52.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              222
+           Relative Time      - [1100 ms] (04.01.2010 11:23:53.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              223
+           Relative Time      - [1000 ms] (04.01.2010 11:23:54.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              224
+           Relative Time      - [1100 ms] (04.01.2010 11:23:55.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              225
+           Relative Time      - [1000 ms] (04.01.2010 11:23:56.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              226
+           Relative Time      - [1100 ms] (04.01.2010 11:23:57.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              227
+           Relative Time      - [1000 ms] (04.01.2010 11:23:58.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              228
+           Relative Time      - [1100 ms] (04.01.2010 11:23:59.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              229
+           Relative Time      - [1000 ms] (04.01.2010 11:24:00.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              230
+           Relative Time      - [1100 ms] (04.01.2010 11:24:01.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              231
+           Relative Time      - [1000 ms] (04.01.2010 11:24:02.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              232
+           Relative Time      - [1100 ms] (04.01.2010 11:24:03.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              233
+           Relative Time      - [1000 ms] (04.01.2010 11:24:04.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              234
+           Relative Time      - [1100 ms] (04.01.2010 11:24:05.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              235
+           Relative Time      - [1000 ms] (04.01.2010 11:24:06.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              236
+           Relative Time      - [1100 ms] (04.01.2010 11:24:07.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              237
+           Relative Time      - [1000 ms] (04.01.2010 11:24:08.800 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              238
+           Relative Time      - [1100 ms] (04.01.2010 11:24:09.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              239
+           Relative Time      - [1000 ms] (04.01.2010 11:24:10.900 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              240
+           Relative Time      - [1100 ms] (04.01.2010 11:24:12.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              241
+           Relative Time      - [1000 ms] (04.01.2010 11:24:13.000 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              242
+           Relative Time      - [1100 ms] (04.01.2010 11:24:14.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              243
+           Relative Time      - [1000 ms] (04.01.2010 11:24:15.100 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              244
+           Relative Time      - [1100 ms] (04.01.2010 11:24:16.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              245
+           Relative Time      - [1000 ms] (04.01.2010 11:24:17.200 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              246
+           Relative Time      - [1100 ms] (04.01.2010 11:24:18.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              247
+           Relative Time      - [1000 ms] (04.01.2010 11:24:19.300 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              248
+           Relative Time      - [1100 ms] (04.01.2010 11:24:20.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              249
+           Relative Time      - [1000 ms] (04.01.2010 11:24:21.400 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              250
+           Relative Time      - [1100 ms] (04.01.2010 11:24:22.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              251
+           Relative Time      - [1000 ms] (04.01.2010 11:24:23.500 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              252
+           Relative Time      - [1100 ms] (04.01.2010 11:24:24.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              253
+           Relative Time      - [1000 ms] (04.01.2010 11:24:25.600 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+                              254
+           Relative Time      - [1100 ms] (04.01.2010 11:24:26.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x9F4A2C8B (N56.00030000)
+           LON                - 0x3E94D242 (W44.00249997)
+           SPEED              - 1000  (10.00 kmph)
+           DIR                - 120 
+           ------------------
+                              255
+           Relative Time      - [1000 ms] (04.01.2010 11:24:27.700 GMT)
+             Point Data Exist - 1
+             Long. Hemisphere -  1
+             Lat.  Hemisphere -   1
+           LAT                - 0x00000000 (N0.00000000)
+           LON                - 0x00000000 (W0.00000000)
+           SPEED              - 0  (0.00 kmph)
+           DIR                - 100 
+           ------------------
+
+
+-------------------------------------------------------------
+Press any key to exit...

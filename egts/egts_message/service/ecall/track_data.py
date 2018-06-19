@@ -1,5 +1,6 @@
 """EGTS_SR_TRACK_DATA"""
 from ....egts_types import *
+from ....egts_types.date_time_field import DateTime
 
 
 class TrackData(EGTSRecord):
@@ -9,7 +10,7 @@ class TrackData(EGTSRecord):
             # Structures amount is calculated based on length of tds
             ('sa', Byte()),
             # Time is set outside
-            ('atm', UInt()),
+            ('atm', DateTime()),
             ('tds', ArrayOfType(maxlen=255, of_type=TrackDataStructure)),
             *args, **kwargs
         )
@@ -18,6 +19,8 @@ class TrackData(EGTSRecord):
         """
         Calculate necessary fields
         """
+        if self['tds'].quantity == 0:
+            self['tds'].append({'flags': {'rtm': 0, 'lohs': 0, 'lahs': 0}})
         self['sa'] = self['tds'].quantity
 
 
@@ -31,9 +34,51 @@ class TrackDataStructure(EGTSRecord):
             ('long', UInt(optional=True)),
             ('spdl', Byte(optional=True)),
             ('dirh_spdh', DirhSpdh(optional=True)),
-            ('dir', Byte(optional=True)),
+            ('dirl', Byte(optional=True)),
             *args, ** kwargs
         )
+
+    @property
+    def special_inputs(self):
+        return {
+            'dir': self._set_dir,
+            'spd': self._set_spd,
+            'lat': self._set_lat,
+            'long': self._set_long
+        }
+
+    @staticmethod
+    def is_dig(val):
+        try:
+            float(str(val))
+            return True
+        except ValueError:
+            return False
+
+    def _set_lat(self, value):
+        if self.is_dig(value):
+            val = float(value)
+            self['lahs'] = val >= 0
+            self.value['lat'].value = int(abs(val) / 90 * 0xFFFFFFFF)
+        else:
+            self.value['lat'].value = value
+
+    def _set_long(self, value):
+        if self.is_dig(value):
+            val = float(value)
+            self['lohs'] = val >= 0
+            self.value['long'].value = int(abs(val) / 180 * 0xFFFFFFFF)
+        else:
+            self.value['long'].value = value
+
+    def _set_dir(self, value):
+        self['dirh_spdh']['dirh'] = value // 2**8
+        self['dirl'] = value % 2**8
+
+    def _set_spd(self, value):
+
+        self['dirh_spdh']['spdh'] = int(value) // 2 ** 8
+        self['spdl'] = int(value) % 2 ** 8
 
     def set_fields(self):
         """
@@ -42,14 +87,16 @@ class TrackDataStructure(EGTSRecord):
         flags = self['flags']
         if (self['lat'].specified and self['long'].specified and
                 self['spdl'].specified and self['dirh_spdh'].specified and
-                self['dir'].specified):
+                self['dirl'].specified):
             flags['tnde'] = 1
         elif (self['lat'].specified or self['long'].specified or
-              self['sdpl'].specified or self['dirh_spdh'].specified or
-              self['dir'].specified):
+              self['spdl'].specified or self['dirh_spdh'].specified or
+              self['dirl'].specified):
             raise NotImplementedError('Track Data is incomplete!')
         else:
             flags['tnde'] = 0
+            flags['lahs'] = 0
+            flags['lohs'] = 0
 
 
 class Flags(BitField):

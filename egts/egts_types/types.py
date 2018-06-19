@@ -4,6 +4,7 @@ import struct
 import abc
 import collections
 import enum
+import binascii
 
 
 class EGTSField(object):
@@ -37,6 +38,14 @@ class EGTSField(object):
         """
         Each field must be able to calculate length in bytes
         :return: length in bytes
+        """
+        raise NotImplementedError
+
+    @abc.abstractproperty
+    def bytes(self):
+        """
+        Each field must be able to calculate bytes representation of itself
+        :return: octet string
         """
         raise NotImplementedError
 
@@ -85,6 +94,8 @@ class EGTSField(object):
         else:
             raise TypeError('Cannot assign {} to {}'.format(type(value),
                                                             type(self)))
+        if value is None:
+            return
         # pylint: enable=unidiomatic-typecheck
         cast(value)
         self._validate()
@@ -128,12 +139,7 @@ class Simple(EGTSField):
         :return: field length in bytes
         """
         if self._maxlen:
-            if self._minlen == self._maxlen:
-                # if matching maxlen and minlen means that size is fixed
-                return self._maxlen
-            else:
-                # if size is not fixed - it is calculated
-                return len(str(self)) / 2
+            return len(str(self)) // 2
         else:
             # if there is no maxlen, field's constant size is returned
             return self._SIZE
@@ -145,7 +151,7 @@ class Simple(EGTSField):
         :return: (input format: cast function) dict
         """
         return {
-            None: self.unset,
+            type(None): self.unset,
             int: self._int_cast,
             str: self._string_cast,
             unicode: self._unicode_cast,
@@ -167,7 +173,11 @@ class Simple(EGTSField):
         Pack value into little-endian octet string
         :return: little-endian octet string
         """
-        return struct.pack(self._format_char, self._value).encode('hex')
+        return self.bytes.encode('hex')
+
+    @property
+    def bytes(self):
+        return struct.pack(self._format_char, self._value)
 
     def _int_cast(self, value):
         """
@@ -223,7 +233,7 @@ class Simple(EGTSField):
         """
         Validate if field's size is appropriate
         """
-        length = len(str(self)) / 2
+        length = len(self)
         if not self._minlen <= length <= self._maxlen:
             raise OverflowError(
                 'Wrong length! Got {} instead of {} <= len <= {} '.
@@ -349,20 +359,24 @@ class FloatStored(Simple):
 
 class String(Simple):
     """String Type Object"""
+    def __init__(self, fixed=False, *args, **kwargs):
+        self._fixed = fixed
+        super(String, self).__init__(*args, **kwargs)
+
+    def __len__(self):
+        return len(self._value)
+
     @property
     def _format_char(self):
         """
         Format char depends on string length
         :return: format char for "struct" formatting
         """
-        return '<{}s'.format(len(self))
-
-    def _long_cast(self, value):
-        """
-        Cast long value.
-        :param value: long value
-        """
-        self._string_cast(str(value))
+        if self._fixed:
+            length = self._maxlen
+        else:
+            length = len(self)
+        return '<{}s'.format(length)
 
     def _int_cast(self, value):
         """
@@ -371,12 +385,18 @@ class String(Simple):
         """
         self._string_cast(str(value))
 
+    def _unicode_cast(self, value):
+        self._string_cast(value.encode('cp1251'))
+
     def _string_cast(self, value):
         """
-        Cast string value.
+        Cast string value. Encode it to cp-1251 according to EGTS Standard
         :param value: string value
         """
-        self._value = value
+        try:
+            self._value = value.decode('utf-8').encode('cp1251')
+        except UnicodeDecodeError:
+            self._value = value
 
 
 class Bits(Simple):
@@ -408,9 +428,9 @@ class Bits(Simple):
         :param value: string value
         """
         if value[0:2] == '0x':
-            self._value = int(value, 16)
+            self._int_cast(int(value, 16))
         else:
-            self._value = int(value, 2)
+            self._int_cast(int(value, 2))
 
     @property
     def _format_char(self):
@@ -418,6 +438,21 @@ class Bits(Simple):
         Bits do not have any format char because str method is overridden
         """
         return None
+
+    def _validate(self):
+        super(Bits, self)._validate()
+        if self._value < 0:
+            raise TypeError('Cannot assign negative values to Bits!')
+
+    def _size_validate(self):
+        """
+        Validate if field's size is appropriate
+        """
+        length = len(str(self))
+        if not self._minlen <= length <= self._maxlen:
+            raise OverflowError(
+                'Wrong length! Got {} instead of {} <= len <= {} '.
+                format(length, self._minlen, self._maxlen))
 
 
 class Boolean(Simple):
@@ -487,7 +522,7 @@ class UShort(IntStored):
         return '<H'
 
 
-class UInt(IntStored):
+class UInt(LongStored):
     """UInt Type"""
     # UInt has fixed size of 4
     _SIZE = 4
@@ -495,7 +530,17 @@ class UInt(IntStored):
     @property
     def _format_char(self):
         """Encoded as unsigned int"""
-        return '<I'
+        return '<L'
+
+    @property
+    def _input_casts(self):
+        """
+        Add long cast in input casts
+        :return: (input format: cast function) dict
+        """
+        casts = super(LongStored, self)._input_casts
+        casts[long] = self._long_cast
+        return casts
 
 
 class ULong(LongStored):
@@ -567,16 +612,9 @@ class Compound(EGTSField):
         Calculate octet string
         :return: octet string
         """
-        if self.is_ready():
-            string = ''
-            for field in self.fields:
-                if field.specified:
-                    string += str(field)
-            return string
-        else:
-            # Cannot calculate string unless all the required fields are set
-            raise KeyError('Some required fields were not set!')
+        return binascii.hexlify(self.bytes)
 
+    @abc.abstractmethod
     def is_ready(self):
         """
         Check all the fields are set and field is ready to be calculated
@@ -601,18 +639,15 @@ class Compound(EGTSField):
         Calculate byte array for the field
         :return: byte values (0 <= x <= 255) tuple
         """
-        byte_array = list()
-        octet_string = str(self)
-        for i in xrange(0, len(octet_string), 2):
-            byte = int(octet_string[i:i + 2], 16)
-            byte_array.append(byte)
-        return tuple(byte_array)
-
-    def set_fields(self):
-        """
-        Override this method to calculate necessary fields
-        """
-        pass
+        if self.is_ready():
+            byte_string = b''
+            for field in self.fields:
+                if field.specified:
+                    byte_string += field.bytes
+            return byte_string
+        else:
+            # Cannot calculate string unless all the required fields are set
+            raise ValueError('Some required fields were not set!')
 
     @property
     def specified(self):
@@ -687,6 +722,12 @@ class EGTSRecord(Compound):
                 field.prepare()
         self.set_fields()
 
+    def set_fields(self):
+        """
+        Override this method to calculate necessary fields
+        """
+        pass
+
     @property
     def _input_casts(self):
         """
@@ -703,9 +744,12 @@ class EGTSRecord(Compound):
         DOES NOT SUPPORT ENCLOSED FIELD SETTING
         :param value: values dictionary
         """
-        for field in self._value.keys():
-            if field in value.keys():
-                self[field] = value[field]
+        for field in value.keys():
+            self[field] = value[field]
+
+    @property
+    def special_inputs(self):
+        return {}
 
     def __getitem__(self, item):
         """
@@ -743,10 +787,13 @@ class EGTSRecord(Compound):
         :param key: field's name
         :param value: value to set
         """
-        if isinstance(value, EGTSField):
-            self._value[key] = copy.deepcopy(value)
+        if key in self.special_inputs:
+            self.special_inputs[key](value)
         else:
-            self[key].value = value
+            if isinstance(value, EGTSField):
+                self._value[key] = copy.deepcopy(value)
+            else:
+                self[key].value = value
 
 
 class BitField(EGTSRecord):
@@ -771,17 +818,31 @@ class BitField(EGTSRecord):
         """Length in bytes = Length in bits/8"""
         return super(BitField, self).__len__() // 8
 
+    @property
+    def bitstring(self):
+        if self.is_ready():
+            bit_string = ''
+            for field in self.fields:
+                bit_string += str(field)
+            return bit_string
+        else:
+            raise KeyError('Some required fields were not set!')
+
     def __str__(self):
         """
         str method overriding
         :return: octet string (bytes)
         """
-        bit_string = super(BitField, self).__str__()
+        bit_string = self.bitstring
         string = ''
         for i in xrange(0, len(bit_string), 8):
             # MAY BE WRONG BYTES ORDER
             string += '{:02x}'.format(int(bit_string[i:i+8], 2))
         return string
+
+    @property
+    def bytes(self):
+        return binascii.unhexlify(str(self))
 
 
 class ArrayOfType(Compound):
@@ -837,7 +898,6 @@ class ArrayOfType(Compound):
         if issubclass(self._type, Compound):
             for field in self.fields:
                 field.prepare()
-        self.set_fields()
 
     @property
     def _input_casts(self):
@@ -924,14 +984,35 @@ class ArrayOfType(Compound):
                                 .format(type(value), self._type))
         else:
             self._value.append(self._type(value=value))
-        self._validate()
+        self._size_validate(soft=True)
 
-    def _size_validate(self):
+    def insert(self, index, value=None):
+        """
+        Insert item to array at position
+        :param index: where to insert
+        :param value: value to add
+        """
+        if isinstance(value, EGTSField):
+            if isinstance(value, self._type):
+                self._value.insert(index, copy.deepcopy(value))
+            else:
+                raise TypeError('Cannot insert {} to array of {}'
+                                .format(type(value), self._type))
+        else:
+            self._value.insert(index, self._type(value=value))
+        self._size_validate(soft=True)
+
+    def _size_validate(self, soft=False):
         """
         Validate if array's size is appropriate
         """
         length = self.quantity
-        if not self._minlen <= length <= self._maxlen:
+        if soft:
+            minlen = 0
+        else:
+            minlen = self._minlen
+        maxlen = self._maxlen
+        if not minlen <= length <= maxlen:
             raise OverflowError(
                 'Cannot add another element to the array (maxlen=={})'.
                 format(self._maxlen))
