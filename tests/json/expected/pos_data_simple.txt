@@ -1,8 +1,8 @@
 EGTS protocol validator v.1.0  Copyright JSC "Navigation-information systems", 2011
 ------------------------------------------------------------------------------------
-File: 'D:\PycharmProjects\egts_protocol\tests\json\generated\tmp_msg.bin'
+File: 'D:\PycharmProjects\egts-python\tests\json\generated\tmp_msg.bin'
 Packet data: 
- 0100000B002800010001A51D000100040000D90F0202101A002124D90F380000002C0000009158822C050607050D0102039CFFF0E9
+ 0100000B002800010001A51D000100040000D90F0202101A002124D90F4D729A483DA387DAD158822C050607050D0102039CFF966A
 
 
 EGTS Transport Layer:
@@ -29,7 +29,7 @@ EGTS Service Layer:
   Validating result   - 0 (OK)
 
   Packet Type         - EGTS_PT_APPDATA
-  Service Layer CS    - 0xE9F0
+  Service Layer CS    - 0x6A96
 
     Service Layer Record:
     ---------------------
