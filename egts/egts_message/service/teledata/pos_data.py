@@ -35,7 +35,8 @@ class PosData(EGTSRecord):
             'dir': self._set_dir,
             'spd': self._set_spd,
             'lat': self._set_lat,
-            'long': self._set_long
+            'long': self._set_long,
+            'alt': self._set_alt
         }
 
     def _set_dir(self, value):
@@ -43,8 +44,8 @@ class PosData(EGTSRecord):
         self['dirl'] = value % 2**8
 
     def _set_spd(self, value):
-        self['dirh_alts_spdh']['spdh'] = value // 2 ** 8
-        self['spdl'] = value % 2 ** 8
+        self['dirh_alts_spdh']['spdh'] = int(value) // 2 ** 8
+        self['spdl'] = int(value) % 2 ** 8
 
     @staticmethod
     def is_dig(val):
@@ -70,15 +71,21 @@ class PosData(EGTSRecord):
         else:
             self.value['long'].value = value
 
+    def _set_alt(self, value):
+        if self.is_dig(value):
+            raise NotImplementedError("Unable to set as a number, specification undefined")
+        else:
+            self.value['alt'].value = value
+
     def set_fields(self):
         """
         Calculate necessary fields
         """
         flags = self['flags']
-        if self['alt'].specified:
+        if self['alt'].quantity > 0:
             flags['alte'] = 0b1
         else:
-            flags['alte'] = 0b1
+            flags['alte'] = 0b0
             self['dirh_alts_spdh']['alts'] = 0b0
 
 

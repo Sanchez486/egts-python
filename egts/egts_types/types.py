@@ -792,8 +792,27 @@ class EGTSRecord(Compound):
         else:
             if isinstance(value, EGTSField):
                 self._value[key] = copy.deepcopy(value)
-            else:
+            elif key in self._value.keys():
                 self[key].value = value
+            else:
+                for field in self.fields:
+                    if isinstance(field, EGTSRecord):
+                        try:
+                            field[key] = value
+                        except KeyError:
+                            pass
+                        else:
+                            return
+                    elif isinstance(field, ArrayOfType):
+                        for i in xrange(0, field.quantity):
+                            try:
+                                field[i][key] = value
+                            except (KeyError, IndexError):
+                                pass
+                            else:
+                                return
+                raise KeyError('{} field not found!'.
+                               format(key))
 
 
 class BitField(EGTSRecord):
