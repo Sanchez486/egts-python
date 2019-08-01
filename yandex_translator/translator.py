@@ -23,9 +23,6 @@ class Translator(object):
     DEF_DIN = "0b00000000"
     DEF_SRC = 0
 
-    HOST = "egts.yandex.net"
-    PORT = 4000
-
     JSON_FILENAME = "egts.json"
 
     def __init__(self, detailed_logging=False):
@@ -44,10 +41,15 @@ class Translator(object):
         }
         self._logger = Logger(detailed_logging=detailed_logging)
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self._host = None
+        self._port = None
 
     def load_json(self, json_path):
         json_file = open(json_path)
-        data = json.load(json_file)
+        json_data = json.load(json_file)
+        self._host = json_data['server']
+        self._port = json_data['port']
+        data = json_data['data']
         messages = []
         i = 0
         while i < len(data):
@@ -88,11 +90,12 @@ class Translator(object):
         return res
 
     def run(self):
-        self._socket.connect((self.HOST, self.PORT))
         current_path = os.path.dirname(os.path.abspath(sys.executable)) if sys.executable is not None else\
             os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
         json_path = current_path + "\\" + self.JSON_FILENAME
         msgs = self.load_json(json_path)
+
+        self._socket.connect((self._host, self._port))
 
         for msg in msgs:
             try:
