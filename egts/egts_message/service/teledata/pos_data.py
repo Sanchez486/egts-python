@@ -58,7 +58,7 @@ class PosData(EGTSRecord):
     def _set_lat(self, value):
         if self.is_dig(value):
             val = float(value)
-            self['lahs'] = val >= 0
+            self['lahs'] = val < 0
             self.value['lat'].value = int(abs(val) / 90 * 0xFFFFFFFF)
         else:
             self.value['lat'].value = value
@@ -66,7 +66,7 @@ class PosData(EGTSRecord):
     def _set_long(self, value):
         if self.is_dig(value):
             val = float(value)
-            self['lohs'] = val >= 0
+            self['lohs'] = val < 0
             self.value['long'].value = int(abs(val) / 180 * 0xFFFFFFFF)
         else:
             self.value['long'].value = value
