@@ -1,4 +1,5 @@
 from egts.interface import *
+from .wialon import *
 from logger import Logger
 import json
 import socket
@@ -23,7 +24,7 @@ class Translator(object):
     DEF_DIN = "0b00000000"
     DEF_SRC = 0
 
-    JSON_FILENAME = "egts.json"
+    JSON_FILENAME = "msg.json"
 
     def __init__(self, detailed_logging=False):
         self.defaults = {
@@ -43,13 +44,12 @@ class Translator(object):
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self._host = None
         self._port = None
+        self._loaders = {
+            'egts': self._load_egts,
+            'wialon': self._load_wialon
+        }
 
-    def load_json(self, json_path):
-        json_file = open(json_path)
-        json_data = json.load(json_file)
-        self._host = json_data['server']
-        self._port = json_data['port']
-        data = json_data['data']
+    def _load_egts(self, data):
         messages = []
         i = 0
         while i < len(data):
@@ -81,8 +81,45 @@ class Translator(object):
             messages.append(msg)
         return messages
 
-    def send(self, egts_bytes):
-        self._socket.sendall(egts_bytes)
+    def _load_wialon(self, data):
+        messages = []
+        i = 0
+        while i < len(data):
+            if data[i] is None or data[i] == [] or data[i] == {}:
+                continue
+            packet_data = data[i]
+
+            i += 1
+
+            msg = WialonMessage()
+            blocks_data = packet_data.pop('blocks')
+            for key in packet_data:
+                msg[key] = packet_data[key]
+            for block_data in blocks_data:
+                name = block_data.pop('name')
+                if name == 'posinfo':
+                    data_type = block_data.pop('type', 'posinfo')
+                else:
+                    data_type = block_data.pop('type')
+                block = msg.add_block(name, data_type)
+                for block_key in block_data.keys():
+                    block[block_key] = block_data[block_key]
+            messages.append(msg)
+
+        return messages
+
+    def load_json(self, json_path):
+        json_file = open(json_path)
+        json_data = json.load(json_file)
+        self._host = json_data['server']
+        self._port = json_data['port']
+        protocol = json_data['protocol']
+        data = json_data['data']
+        self._logger.protocol = protocol
+        return self._loaders[protocol](data)
+
+    def send(self, data_bytes):
+        self._socket.sendall(data_bytes)
         data = self._socket.recv(1024)
         res = b''
         for data_byte in data:

@@ -11,4 +11,4 @@ except IndexError:
 
 if detailed_logging:
     print 'DETAILED LOGGING ON!'
-yandex_translator.__main__.main(detailed_logging)
+yandex_translator.__main__.main(detailed_logging=detailed_logging)

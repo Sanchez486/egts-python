@@ -1,9 +1,8 @@
 from . import translator
 
 
-def main(*args):
+def main(detailed_logging=False):
     try:
-        detailed_logging = "detailed_logging" in args
         translator_instance = translator.Translator(detailed_logging=detailed_logging)
         translator_instance.run()
     except Exception as e:

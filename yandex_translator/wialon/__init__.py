@@ -1,0 +1,1 @@
+from wialon_message import WialonMessage

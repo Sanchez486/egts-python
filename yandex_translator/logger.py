@@ -7,6 +7,15 @@ class Logger(object):
     def __init__(self, detailed_logging=False):
         self._logs = []
         self._detailed_logging = detailed_logging
+        self._protocol = None
+
+    @property
+    def protocol(self):
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, value):
+        self._protocol = value
 
     def log_msg(self, msg):
         self._logs.append(msg)
@@ -26,16 +35,37 @@ class Logger(object):
         return int(reverse_bytestr, 16)
 
     def log_reply(self, response):
-        if response[:2] != '01':
+        handler = self.get_protocol_handler()
+        isok = handler(response)
+        if isok:
+            self.log_msg('ok')
+        else:
             self.log_msg(response)
-            return
+        return
+
+    def get_protocol_handler(self):
+        handlers = {
+            'egts': self.egts_isok,
+            'wialon': self.wialon_isok
+        }
+        return handlers[self._protocol]
+
+    def egts_isok(self, response):
+        if response[:2] != '01':
+            return False
         sr = response[-12:-4]
         subrecord_type = int(sr[:2], 16)
         result_code = int(sr[-3:], 16)
-        if result_code != 0 or subrecord_type != 0:
-            self.log_msg(response)
+        if result_code == 0 and subrecord_type == 0:
+            return True
         else:
-            self.log_msg('ok')
+            return False
+
+    def wialon_isok(self, response):
+        if response == '11':
+            return True
+        else:
+            return False
 
     def write(self, path):
         res = self._logs
