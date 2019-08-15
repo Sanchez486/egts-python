@@ -20,28 +20,28 @@ class DateTimeBE(DateTime):
 class IntBE(Int):
     @property
     def _format_char(self):
-        """Encoded as unsigned short"""
+        """Encoded as int"""
         return '>i'
 
 
 class ShortBE(Short):
     @property
     def _format_char(self):
-        """Encoded as unsigned short"""
+        """Encoded as short"""
         return '>h'
 
 
 class LongBE(ULong):
     @property
     def _format_char(self):
-        """Encoded as unsigned short"""
+        """Encoded as long"""
         return '>l'
 
 
 class StringZero(String):
     def _string_cast(self, value):
         """
-        Cast string value. Encode it to cp-1251 according to EGTS Standard
+        Cast string value.
         :param value: string value
         """
         self._value = value + '\x00'
