@@ -89,13 +89,15 @@ class EGTSField(object):
         :param value: value to set
         """
         # pylint: disable=unidiomatic-typecheck
-        if type(value) in self._input_casts:
-            cast = self._input_casts[type(value)]
-        else:
+        found = False
+        for input_type in self._input_casts.keys():
+            if isinstance(value, input_type):
+                found = True
+                cast = self._input_casts[input_type]
+                break
+        if not found:
             raise TypeError('Cannot assign {} to {}'.format(type(value),
                                                             type(self)))
-        if value is None:
-            return
         # pylint: enable=unidiomatic-typecheck
         cast(value)
         self._validate()
@@ -156,6 +158,7 @@ class Simple(EGTSField):
             str: self._string_cast,
             unicode: self._unicode_cast,
             bool: self._bool_cast,
+            long: self._long_cast,
             enum.Enum: self._enum_cast
         }
 
@@ -179,19 +182,26 @@ class Simple(EGTSField):
     def bytes(self):
         return struct.pack(self._format_char, self._value)
 
+    def _long_cast(self, value):
+        """
+        Cast long value.
+        :param value: long value
+        """
+        raise NotImplementedError("Can't cast long to class {}".format(type(self)))
+
     def _int_cast(self, value):
         """
         Cast int value.
         :param value: int value
         """
-        raise NotImplementedError
+        self._long_cast(value)
 
     def _string_cast(self, value):
         """
         Cast string value.
         :param value: string value
         """
-        raise NotImplementedError
+        raise NotImplementedError("Can't cast string to class {}".format(type(self)))
 
     def _unicode_cast(self, value):
         """
@@ -382,6 +392,13 @@ class String(Simple):
         """
         Cast int value.
         :param value: int value
+        """
+        self._string_cast(str(value))
+
+    def _long_cast(self, value):
+        """
+        Cast long value.
+        :param value: long value
         """
         self._string_cast(str(value))
 
