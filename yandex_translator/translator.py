@@ -130,19 +130,24 @@ class Translator(object):
         current_path = os.path.dirname(os.path.abspath(sys.executable)) if sys.executable is not None else\
             os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
         json_path = current_path + "\\" + self.JSON_FILENAME
-        msgs = self.load_json(json_path)
 
-        self._socket.connect((self._host, self._port))
+        try:
+            msgs = self.load_json(json_path)
+            self._socket.connect((self._host, self._port))
 
-        for msg in msgs:
-            try:
-                reply_bytes = self.send(msg.bytes)
-                reply = ''
-                for reply_byte in reply_bytes:
-                    reply += reply_byte
-                self._logger.log_reply(reply)
-            except Exception as e:
-                self._logger.log_msg(str(e))
+            for msg in msgs:
+                try:
+                    reply_bytes = self.send(msg.bytes)
+                    reply = ''
+                    for reply_byte in reply_bytes:
+                        reply += reply_byte
+                    self._logger.log_reply(reply)
+                except Exception as e:
+                    self._logger.log_msg(str(e))
 
-        self._socket.close()
-        self._logger.write(current_path)
+            self._socket.close()
+        except Exception as e:
+            self._logger._detailed_logging = True
+            self._logger.log_msg(str(e))
+        finally:
+            self._logger.write(current_path)
