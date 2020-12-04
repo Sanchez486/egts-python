@@ -24,6 +24,8 @@ class Translator(object):
     DEF_DIN = "0b00000000"
     DEF_SRC = 0
 
+    SOCKET_TIMEOUT = 60.0
+
     JSON_FILENAME = "msg.json"
 
     def __init__(self, detailed_logging=False):
@@ -134,6 +136,7 @@ class Translator(object):
         try:
             msgs = self.load_json(json_path)
             self._socket.connect((self._host, self._port))
+            self._socket.settimeout(self.SOCKET_TIMEOUT)
 
             for msg in msgs:
                 try:
