@@ -72,7 +72,7 @@ class Translator(object):
             rd = msg_sdr['rd'][0]
 
             msg_sdr['oid'] = data_record['id']
-            msg_sdr['tm'] = datetime.datetime.now()
+            msg_sdr['tm'] = datetime.datetime.utcnow()
             msg_sdr['rn'] = i
             rd['ntm'] = data_record['ntm']
             rd['lat'] = data_record['lat']
